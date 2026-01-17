@@ -88,612 +88,540 @@
 <body>
 <a class="skip-link" href="#mainContent">Skip to main content</a>
 
-<!-- HEADER -->
-<header class="main-header" id="mainHeader">
-  <div class="container header-inner">
-    <a aria-label="Agency Chauffeur Private Drivers Home" class="brand" href="#top">
-      <img alt="Agency Chauffeur Private Drivers logo" class="brand-logo" src="Photos/Logo.png"/>
-      <span class="brand-text">Agency Chauffeur Private Drivers</span>
-    </a>
+<!-- =========================
+     FIX B: MOBILE OVERLAY + MOBILE NAV MUST BE OUTSIDE THE FRAME
+     ========================= -->
+<div aria-hidden="true" class="mobile-overlay" id="mobileMenuOverlay"></div>
 
-    <button aria-controls="mobileNav" aria-expanded="false" aria-label="Open menu" class="mobile-toggle" id="mobileMenuToggle">
-      <i aria-hidden="true" class="fa-solid fa-bars"></i>
+<nav aria-label="Mobile" class="mobile-nav" id="mobileNav" aria-hidden="true">
+  <div class="mobile-nav-head">
+    <span class="mobile-brand">Menu</span>
+    <button aria-label="Close menu" class="mobile-close" type="button" id="mobileMenuClose">
+      <i aria-hidden="true" class="fa-solid fa-xmark"></i>
     </button>
-
-    <!-- Desktop Nav -->
-    <nav aria-label="Primary" class="desktop-nav">
-      <ul class="main-nav">
-        <li><a aria-current="page" href="#top">Home</a></li>
-
-        <li class="dropdown">
-          <button aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" type="button">
-            Services <i aria-hidden="true" class="fas fa-chevron-down"></i>
-          </button>
-          <ul aria-label="Services" class="dropdown-menu">
-            <li class="dropdown-label">Chauffeur Transportation</li>
-            <li><a href="#airport-transfers">Airport Transfers</a></li>
-            <li><a href="#corporate-transportation">Corporate & Executive</a></li>
-            <li><a href="#long-distance">Long-Distance</a></li>
-            <li><a href="#special-events">Special Events</a></li>
-
-            <li class="dropdown-sep"></li>
-
-            <li class="dropdown-label">More</li>
-            <li><a href="#fleet">Fleet</a></li>
-            <li><a href="#booking">Booking</a></li>
-            <li><a href="notary.html">Mobile Notary</a></li>
-          </ul>
-        </li>
-
-        <li><a href="#fleet">Fleet</a></li>
-        <li><a href="notary.html">Mobile Notary</a></li>
-
-        <li class="nav-cta">
-          <a class="btn btn-primary" href="#booking">Request Service</a>
-        </li>
-      </ul>
-    </nav>
   </div>
 
-  <!-- Mobile Nav -->
-  <div aria-hidden="true" class="mobile-overlay" id="mobileMenuOverlay"></div>
-  <nav aria-label="Mobile" class="mobile-nav" id="mobileNav">
-    <div class="mobile-nav-head">
-      <span class="mobile-brand">Menu</span>
-      <button aria-label="Close menu" class="mobile-close" type="button" id="mobileMenuClose">
-        <i aria-hidden="true" class="fa-solid fa-xmark"></i>
+  <ul class="mobile-nav-links">
+    <li><a aria-current="page" href="#top">Home</a></li>
+
+    <li class="mobile-dropdown">
+      <button aria-expanded="false" class="mobile-dropdown-toggle" type="button">
+        Services <i aria-hidden="true" class="fas fa-chevron-down"></i>
       </button>
-    </div>
-
-    <ul class="mobile-nav-links">
-      <li><a aria-current="page" href="#top">Home</a></li>
-
-      <li class="mobile-dropdown">
-        <button aria-expanded="false" class="mobile-dropdown-toggle" type="button">
-          Services <i aria-hidden="true" class="fas fa-chevron-down"></i>
-        </button>
-        <ul aria-label="Services" class="mobile-dropdown-menu">
-          <li class="dropdown-label">Chauffeur Transportation</li>
-          <li><a href="#airport-transfers">Airport Transfers</a></li>
-          <li><a href="#corporate-transportation">Corporate & Executive</a></li>
-          <li><a href="#long-distance">Long-Distance</a></li>
-          <li><a href="#special-events">Special Events</a></li>
-          <li class="dropdown-sep"></li>
-          <li class="dropdown-label">More</li>
-          <li><a href="#fleet">Fleet</a></li>
-          <li><a href="#booking">Booking</a></li>
-          <li><a href="notary.html">Mobile Notary</a></li>
-        </ul>
-      </li>
-
-      <li><a href="#fleet">Fleet</a></li>
-      <li><a href="notary.html">Mobile Notary</a></li>
-      <li><a href="#booking">Request Service</a></li>
-    </ul>
-
-    <div class="mobile-cta">
-      <a class="btn btn-primary btn-block" href="#booking">Request Service</a>
-    </div>
-  </nav>
-</header>
-
-<main id="mainContent">
-
-  <!-- HERO -->
-  <section class="hero" id="top">
-    <div class="hero-slider">
-      <div class="hero-slide active" style="background-image:url('Photos/6-7 Passenger (SUV) suburban and yukon together.png')"></div>
-      <div class="hero-slide" style="background-image:url('Photos/18-pax-2024-cadillac-escalade.png')"></div>
-      <div class="hero-slide" style="background-image:url('Photos/2025_limousine_sprinter_interior.jpg')"></div>
-
-      <div aria-hidden="true" class="hero-overlay"></div>
-
-      <div class="container hero-content">
-        <h1>Old-School Chauffeur Standards — Done Properly</h1>
-        <p class="hero-subtitle">
-          Agency Chauffeur Private Drivers provides appointment-based chauffeur transportation across Dallas–Fort Worth for airport transfers,
-          corporate travel, weddings, events, group transportation, and long-distance itineraries — delivered with discretion, punctuality,
-          and professional conduct.
-        </p>
-
-        <div class="hero-cta">
-          <a class="btn btn-primary" href="#booking">Request Service</a>
-          <a class="btn btn-secondary" href="#airport-transfers">Airport Transfers</a>
-          <a class="btn btn-secondary" href="#fleet">View Fleet</a>
-        </div>
-
-        <div class="hero-trust">
-          <div class="trust-inline">
-            <span class="trust-pill"><i class="fa-solid fa-user-tie"></i> Professional Chauffeurs</span>
-            <span class="trust-pill"><i class="fa-solid fa-clock"></i> Planned & Confirmed Scheduling</span>
-            <span class="trust-pill"><i class="fa-solid fa-shield-halved"></i> Discreet & Reliable</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- WHY / VALUE -->
-  <section class="section">
-    <div class="container">
-      <div class="section-head">
-        <h2>Not Rideshare. Professional Chauffeurs.</h2>
-        <p class="lead">
-          Agency Chauffeur Private Drivers is built for clients who value preparation, accountability, and proper conduct.
-          Every reservation is scheduled, confirmed, and managed with a plan.
-        </p>
-      </div>
-
-      <div class="feature-grid">
-        <article class="feature-card">
-          <i class="fa-solid fa-user-tie"></i>
-          <h3>Professional Standards</h3>
-          <p>Discretion, presentation, and a service model designed for private clients and executive travel.</p>
-        </article>
-
-        <article class="feature-card">
-          <i class="fa-solid fa-route"></i>
-          <h3>Planned Transportation</h3>
-          <p>Confirmed pickups and routing decisions based on timing and real-world traffic patterns.</p>
-        </article>
-
-        <article class="feature-card">
-          <i class="fa-solid fa-people-group"></i>
-          <h3>Group Coordination</h3>
-          <p>From Sprinters to coach options, group travel stays organized and on schedule.</p>
-        </article>
-
-        <article class="feature-card">
-          <i class="fa-solid fa-shield-halved"></i>
-          <h3>Trust & Reliability</h3>
-          <p>Consistent execution matters most on airport mornings, formal events, and high-demand weekends.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- AIRPORT -->
-  <section class="section section-alt" id="airport-transfers">
-    <div class="container">
-      <div class="section-head">
-        <h2>Airport Transfers</h2>
-        <p class="lead">
-          Reliable, pre-arranged transportation to and from DFW International Airport, Dallas Love Field,
-          and regional airports — with scheduling you can plan around.
-        </p>
-      </div>
-
-      <div class="two-col">
-        <div class="content">
-          <h3>Airport Travel Without Guesswork</h3>
-          <p>
-            We coordinate timing in advance, confirm details, and handle pickups with the professionalism required
-            for early departures, tight connections, and client-facing trips.
-          </p>
-
-          <ul class="clean-list">
-            <li><i class="fa-solid fa-plane"></i> DFW & DAL chauffeur transportation</li>
-            <li><i class="fa-solid fa-suitcase-rolling"></i> Vehicle selection based on luggage and group size</li>
-            <li><i class="fa-solid fa-clock"></i> Early-morning and late-night coverage by appointment</li>
-          </ul>
-
-          <div class="cta-row">
-            <a class="btn btn-primary" href="#booking">Request Airport Transportation</a>
-            <a class="btn btn-secondary" href="#fleet">View Fleet Options</a>
-          </div>
-        </div>
-
-        <div class="image-card">
-          <img alt="Luxury SUV airport chauffeur service" src="Photos/6-7 Passenger (SUV) suburban and yukon together.png"/>
-          <div class="image-card-body">
-            <h3>Professional Pickup Planning</h3>
-            <p>Airport transportation designed around your itinerary — not app availability.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CORPORATE -->
-  <section class="section" id="corporate-transportation">
-    <div class="container">
-      <div class="section-head">
-        <h2>Corporate & Executive Transportation</h2>
-        <p class="lead">
-          Professional transportation for executives, client hosting, meetings, conferences, and itinerary-based travel.
-        </p>
-      </div>
-
-      <div class="two-col">
-        <div class="content">
-          <h3>Business Travel with Proper Conduct</h3>
-          <ul class="clean-list">
-            <li><i class="fa-solid fa-briefcase"></i> Executive point-to-point and airport transfers</li>
-            <li><i class="fa-solid fa-building"></i> Conferences, conventions, and corporate outings</li>
-            <li><i class="fa-solid fa-handshake"></i> Client-facing transportation with consistent standards</li>
-          </ul>
-
-          <div class="cta-row">
-            <a class="btn btn-primary" href="#booking">Request Corporate Transportation</a>
-          </div>
-        </div>
-
-        <div class="image-card">
-          <img alt="Executive Sprinter chauffeur service" src="Photos/executive Sprinter exterior.png"/>
-          <div class="image-card-body">
-            <h3>Executive-Ready Comfort</h3>
-            <p>Ideal for teams, client hosting, and professional travel days.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- EVENTS -->
-  <section class="section section-alt" id="special-events">
-    <div class="container">
-      <div class="section-head">
-        <h2>Events & High-Demand Weekends</h2>
-        <p class="lead">
-          When traffic patterns change and parking becomes a problem, the value of planned transportation becomes obvious.
-          We coordinate staging, timing, and pickup strategy to keep your schedule clean.
-        </p>
-      </div>
-
-      <div class="card-grid">
-        <article class="image-card">
-          <img alt="Luxury SUV for event transportation" src="Photos/6-7 Passenger (SUV) suburban and yukon together.png"/>
-          <div class="image-card-body">
-            <h3>Executive & Private Events</h3>
-            <p>Arrive professionally and keep the exit plan organized.</p>
-          </div>
-        </article>
-
-        <article class="image-card">
-          <img alt="Limousine Sprinter for group events" src="Photos/Limousine Sprinter Exterior.png"/>
-          <div class="image-card-body">
-            <h3>Group Transportation</h3>
-            <p>Keep your group together with coordinated timing.</p>
-          </div>
-        </article>
-
-        <article class="image-card">
-          <img alt="Party bus for large groups" src="Photos/30-35 Passenger Party Bus exterior.png"/>
-          <div class="image-card-body">
-            <h3>Large Group Nights</h3>
-            <p>Capacity solutions with a planned pickup strategy.</p>
-          </div>
-        </article>
-
-        <article class="image-card">
-          <img alt="Coach transportation for large movements" src="Photos/56 Passenger Exterior.png"/>
-          <div class="image-card-body">
-            <h3>Executive / Coach Options</h3>
-            <p>For corporate groups, long-distance travel, and high-capacity transportation.</p>
-          </div>
-        </article>
-      </div>
-
-      <div class="cta-row center top-gap">
-        <a class="btn btn-primary" href="#booking">Request Event Transportation</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- LONG DISTANCE -->
-  <section class="section" id="long-distance">
-    <div class="container">
-      <div class="section-head">
-        <h2>Long-Distance Transportation</h2>
-        <p class="lead">
-          Chauffeur-driven trips across Texas and surrounding regions — ideal for itinerary-based travel when privacy and comfort matter.
-        </p>
-      </div>
-
-      <div class="two-col">
-        <div class="content">
-          <h3>Door-to-Door, Scheduled and Confirmed</h3>
-          <ul class="clean-list">
-            <li><i class="fa-solid fa-road"></i> Planned routing with stops as needed</li>
-            <li><i class="fa-solid fa-map-location-dot"></i> Regional travel coordinated in advance</li>
-            <li><i class="fa-solid fa-clock"></i> Timing based on your itinerary, not driver availability</li>
-          </ul>
-
-          <div class="cta-row">
-            <a class="btn btn-primary" href="#booking">Request Long-Distance Transportation</a>
-          </div>
-        </div>
-
-        <div class="image-card">
-          <img alt="Luxury SUV for long-distance chauffeur travel" src="Photos/6-7 Passenger (SUV) suburban and yukon together.png"/>
-          <div class="image-card-body">
-            <h3>Comfort for Longer Trips</h3>
-            <p>Ideal for business travelers, families, and itinerary-based plans.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- MOBILE NOTARY TEASER -->
-  <section class="section section-alt" id="mobile-notary">
-    <div class="container">
-      <div class="section-head">
-        <h2>Mobile Notary Services</h2>
-        <p class="lead">
-          Appointment-based mobile notary service delivered with chauffeur-level professionalism — discreet, punctual, and prepared.
-        </p>
-      </div>
-
-      <div class="two-col">
-        <div class="content">
-          <h3>Professional, Trust-Based Service</h3>
-          <p>
-            Mobile notary requests are handled by appointment, with a focus on confidentiality and proper conduct.
-            For the fastest service, use our dedicated notary request page.
-          </p>
-
-          <div class="cta-row">
-            <a class="btn btn-primary" href="notary.html">Request Mobile Notary Service</a>
-            <a class="btn btn-secondary" href="#booking">Request Chauffeur Service</a>
-          </div>
-        </div>
-
-        <div class="image-card">
-          <img alt="Professional standards and discretion" src="Photos/6-7 Passenger (SUV) suburban and yukon together.png"/>
-          <div class="image-card-body">
-            <h3>Discretion & Punctuality</h3>
-            <p>Appointment-based service, coordinated professionally.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FLEET -->
-  <section class="section" id="fleet">
-    <div class="container">
-      <div class="section-head">
-        <h2>Fleet</h2>
-        <p class="lead">
-          Vehicle selection is based on group size, luggage needs, itinerary, and the type of event.
-        </p>
-      </div>
-
-      <div class="card-grid">
-        <article class="image-card">
-          <img alt="Luxury SUV chauffeur service" src="Photos/6-7 Passenger (SUV) suburban and yukon together.png"/>
-          <div class="image-card-body">
-            <h3>Luxury SUVs</h3>
-            <p>Best for airport transfers, executive travel, families, and luggage-heavy trips.</p>
-          </div>
-        </article>
-
-        <article class="image-card">
-          <img alt="Stretch limousine transportation" src="Photos/10 pax lincoln sedan limo exterior.png"/>
-          <div class="image-card-body">
-            <h3>Limousines</h3>
-            <p>Classic transportation for weddings, formal events, and celebrations.</p>
-          </div>
-        </article>
-
-        <article class="image-card">
-          <img alt="Executive Sprinter service" src="Photos/14 passenger executive Sprinter interior.png"/>
-          <div class="image-card-body">
-            <h3>Sprinters</h3>
-            <p>Ideal for small groups, corporate teams, and event transportation with extra space.</p>
-          </div>
-        </article>
-
-        <article class="image-card">
-          <img alt="Party bus transportation" src="Photos/30-35 Pax Party Bus Interior.png"/>
-          <div class="image-card-body">
-            <h3>Party Buses</h3>
-            <p>Great for concerts, nightlife, celebrations, and group event nights.</p>
-          </div>
-        </article>
-
-        <article class="image-card">
-          <img alt="Executive and coach buses" src="Photos/56 passenger interior.png"/>
-          <div class="image-card-body">
-            <h3>Executive / Coach Buses</h3>
-            <p>For corporate groups, long-distance travel, and high-capacity transportation.</p>
-          </div>
-        </article>
-
-        <article class="image-card">
-          <img alt="Transit shuttle van" src="Photos/14 Passenger Transit Shuttle exterior.png"/>
-          <div class="image-card-body">
-            <h3>Shuttle / Transit Options</h3>
-            <p>Efficient group transfers when practicality and capacity matter.</p>
-          </div>
-        </article>
-      </div>
-
-      <div class="cta-row center top-gap">
-        <a class="btn btn-primary" href="#booking">Request a Fleet Recommendation</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- BOOKING -->
-  <section class="section section-alt" id="booking">
-    <div class="container">
-      <div class="section-head">
-        <h2>Request Chauffeur Service</h2>
-        <p class="lead">
-          Submit your request below and we’ll confirm availability, vehicle selection, and scheduling details.
-          All services are appointment-based and coordinated in advance.
-        </p>
-      </div>
-
-      <div class="embed-wrap">
-        <div id='bro_reservation'></div>
-        <input type='hidden' id='cid' value='AZeGyy3Ackdljq3JkvMgOQ%3d%3d' />
-        <input type='hidden' id='dbaid' value='luhMn%2bNNZqJoV6nB7ay3LA%3d%3d' />
-        <script type='text/javascript'>
-          (function () {
-            var po = document.createElement('script');
-            po.type = 'text/javascript';
-            po.async = true;
-            po.src = 'https://bookridesonline.com/web/reservation.js';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(po, s);
-          })();
-        </script>
-
-        <p class="embed-note">
-          <strong>Alternative Booking Option:</strong>
-          If you prefer, or if you experience difficulty submitting the form, you may complete your reservation directly using this secure link:
-          <a href="https://bookridesonline.com/book/?dbaid=luhMn%2bNNZqJoV6nB7ay3LA%3d%3d" target="_blank" rel="noopener">Secure Online Booking</a>
-        </p>
-      </div>
-
-      <div class="cta-row center top-gap">
-        <a class="btn btn-secondary" href="notary.html">Mobile Notary Page</a>
-      </div>
-    </div>
-  </section>
-
-</main>
-
-<!-- FOOTER -->
-<footer class="site-footer">
-  <div class="container footer-grid">
-
-    <div class="footer-col">
-      <div class="footer-brand">
-        <img src="Photos/Logo.png" alt="Agency Chauffeur Private Drivers" class="footer-logo"/>
-        <div>
-          <div class="footer-title">Agency Chauffeur Private Drivers</div>
-          <div class="footer-sub">Professional Chauffeurs • DFW</div>
-        </div>
-      </div>
-      <p class="top-gap">
-        Appointment-based chauffeur transportation delivered with discretion, punctuality, and proper conduct.
-      </p>
-    </div>
-
-    <div class="footer-col">
-      <h4>Services</h4>
-      <ul>
+      <ul aria-label="Services" class="mobile-dropdown-menu">
+        <li class="dropdown-label">Chauffeur Transportation</li>
         <li><a href="#airport-transfers">Airport Transfers</a></li>
-        <li><a href="#corporate-transportation">Corporate</a></li>
-        <li><a href="#special-events">Events</a></li>
+        <li><a href="#corporate-transportation">Corporate & Executive</a></li>
         <li><a href="#long-distance">Long-Distance</a></li>
+        <li><a href="#special-events">Special Events</a></li>
+        <li class="dropdown-sep"></li>
+        <li class="dropdown-label">More</li>
         <li><a href="#fleet">Fleet</a></li>
-      </ul>
-    </div>
-
-    <div class="footer-col">
-      <h4>More</h4>
-      <ul>
-        <li><a href="#booking">Request Service</a></li>
+        <li><a href="#booking">Booking</a></li>
         <li><a href="notary.html">Mobile Notary</a></li>
-        <li><a href="#top">Back to Top</a></li>
       </ul>
+    </li>
+
+    <li><a href="#fleet">Fleet</a></li>
+    <li><a href="notary.html">Mobile Notary</a></li>
+    <li><a href="#booking">Request Service</a></li>
+  </ul>
+
+  <div class="mobile-cta">
+    <a class="btn btn-primary btn-block" href="#booking">Request Service</a>
+  </div>
+</nav>
+
+<!-- =========================
+     FIX B: SITE FRAME WRAPPER
+     ========================= -->
+<div class="site-frame">
+
+  <!-- HEADER -->
+  <header class="main-header" id="mainHeader">
+    <div class="container header-inner">
+      <a aria-label="Agency Chauffeur Private Drivers Home" class="brand" href="#top">
+        <img alt="Agency Chauffeur Private Drivers logo" class="brand-logo" src="Photos/Logo.png"/>
+        <span class="brand-text">Agency Chauffeur Private Drivers</span>
+      </a>
+
+      <button aria-controls="mobileNav" aria-expanded="false" aria-label="Open menu" class="mobile-toggle" id="mobileMenuToggle">
+        <i aria-hidden="true" class="fa-solid fa-bars"></i>
+      </button>
+
+      <!-- Desktop Nav -->
+      <nav aria-label="Primary" class="desktop-nav">
+        <ul class="main-nav">
+          <li><a aria-current="page" href="#top">Home</a></li>
+
+          <li class="dropdown">
+            <button aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" type="button">
+              Services <i aria-hidden="true" class="fas fa-chevron-down"></i>
+            </button>
+            <ul aria-label="Services" class="dropdown-menu">
+              <li class="dropdown-label">Chauffeur Transportation</li>
+              <li><a href="#airport-transfers">Airport Transfers</a></li>
+              <li><a href="#corporate-transportation">Corporate & Executive</a></li>
+              <li><a href="#long-distance">Long-Distance</a></li>
+              <li><a href="#special-events">Special Events</a></li>
+
+              <li class="dropdown-sep"></li>
+
+              <li class="dropdown-label">More</li>
+              <li><a href="#fleet">Fleet</a></li>
+              <li><a href="#booking">Booking</a></li>
+              <li><a href="notary.html">Mobile Notary</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#fleet">Fleet</a></li>
+          <li><a href="notary.html">Mobile Notary</a></li>
+
+          <li class="nav-cta">
+            <a class="btn btn-primary" href="#booking">Request Service</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="mainContent">
+
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="hero-slider">
+        <div class="hero-slide active" style="background-image:url('Photos/6-7 Passenger (SUV) suburban and yukon together.png')"></div>
+        <div class="hero-slide" style="background-image:url('Photos/18-pax-2024-cadillac-escalade.png')"></div>
+        <div class="hero-slide" style="background-image:url('Photos/2025_limousine_sprinter_interior.jpg')"></div>
+
+        <div aria-hidden="true" class="hero-overlay"></div>
+
+        <div class="container hero-content">
+          <h1>Old-School Chauffeur Standards — Done Properly</h1>
+          <p class="hero-subtitle">
+            Agency Chauffeur Private Drivers provides appointment-based chauffeur transportation across Dallas–Fort Worth for airport transfers,
+            corporate travel, weddings, events, group transportation, and long-distance itineraries — delivered with discretion, punctuality,
+            and professional conduct.
+          </p>
+
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#booking">Request Service</a>
+            <a class="btn btn-secondary" href="#airport-transfers">Airport Transfers</a>
+            <a class="btn btn-secondary" href="#fleet">View Fleet</a>
+          </div>
+
+          <div class="hero-trust">
+            <div class="trust-inline">
+              <span class="trust-pill"><i class="fa-solid fa-user-tie"></i> Professional Chauffeurs</span>
+              <span class="trust-pill"><i class="fa-solid fa-clock"></i> Planned & Confirmed Scheduling</span>
+              <span class="trust-pill"><i class="fa-solid fa-shield-halved"></i> Discreet & Reliable</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY / VALUE -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Not Rideshare. Professional Chauffeurs.</h2>
+          <p class="lead">
+            Agency Chauffeur Private Drivers is built for clients who value preparation, accountability, and proper conduct.
+            Every reservation is scheduled, confirmed, and managed with a plan.
+          </p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card">
+            <i class="fa-solid fa-user-tie"></i>
+            <h3>Professional Standards</h3>
+            <p>Discretion, presentation, and a service model designed for private clients and executive travel.</p>
+          </article>
+
+          <article class="feature-card">
+            <i class="fa-solid fa-route"></i>
+            <h3>Planned Transportation</h3>
+            <p>Confirmed pickups and routing decisions based on timing and real-world traffic patterns.</p>
+          </article>
+
+          <article class="feature-card">
+            <i class="fa-solid fa-people-group"></i>
+            <h3>Group Coordination</h3>
+            <p>From Sprinters to coach options, group travel stays organized and on schedule.</p>
+          </article>
+
+          <article class="feature-card">
+            <i class="fa-solid fa-shield-halved"></i>
+            <h3>Trust & Reliability</h3>
+            <p>Consistent execution matters most on airport mornings, formal events, and high-demand weekends.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- AIRPORT -->
+    <section class="section section-alt" id="airport-transfers">
+      <div class="container">
+        <div class="section-head">
+          <h2>Airport Transfers</h2>
+          <p class="lead">
+            Reliable, pre-arranged transportation to and from DFW International Airport, Dallas Love Field,
+            and regional airports — with scheduling you can plan around.
+          </p>
+        </div>
+
+        <div class="two-col">
+          <div class="content">
+            <h3>Airport Travel Without Guesswork</h3>
+            <p>
+              We coordinate timing in advance, confirm details, and handle pickups with the professionalism required
+              for early departures, tight connections, and client-facing trips.
+            </p>
+
+            <ul class="clean-list">
+              <li><i class="fa-solid fa-plane"></i> DFW & DAL chauffeur transportation</li>
+              <li><i class="fa-solid fa-suitcase-rolling"></i> Vehicle selection based on luggage and group size</li>
+              <li><i class="fa-solid fa-clock"></i> Early-morning and late-night coverage by appointment</li>
+            </ul>
+
+            <div class="cta-row">
+              <a class="btn btn-primary" href="#booking">Request Airport Transportation</a>
+              <a class="btn btn-secondary" href="#fleet">View Fleet Options</a>
+            </div>
+          </div>
+
+          <div class="image-card">
+            <img alt="Luxury SUV airport chauffeur service" src="Photos/6-7 Passenger (SUV) suburban and yukon together.png"/>
+            <div class="image-card-body">
+              <h3>Professional Pickup Planning</h3>
+              <p>Airport transportation designed around your itinerary — not app availability.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CORPORATE -->
+    <section class="section" id="corporate-transportation">
+      <div class="container">
+        <div class="section-head">
+          <h2>Corporate & Executive Transportation</h2>
+          <p class="lead">
+            Professional transportation for executives, client hosting, meetings, conferences, and itinerary-based travel.
+          </p>
+        </div>
+
+        <div class="two-col">
+          <div class="content">
+            <h3>Business Travel with Proper Conduct</h3>
+            <ul class="clean-list">
+              <li><i class="fa-solid fa-briefcase"></i> Executive point-to-point and airport transfers</li>
+              <li><i class="fa-solid fa-building"></i> Conferences, conventions, and corporate outings</li>
+              <li><i class="fa-solid fa-handshake"></i> Client-facing transportation with consistent standards</li>
+            </ul>
+
+            <div class="cta-row">
+              <a class="btn btn-primary" href="#booking">Request Corporate Transportation</a>
+            </div>
+          </div>
+
+          <div class="image-card">
+            <img alt="Executive Sprinter chauffeur service" src="Photos/executive Sprinter exterior.png"/>
+            <div class="image-card-body">
+              <h3>Executive-Ready Comfort</h3>
+              <p>Ideal for teams, client hosting, and professional travel days.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EVENTS -->
+    <section class="section section-alt" id="special-events">
+      <div class="container">
+        <div class="section-head">
+          <h2>Events & High-Demand Weekends</h2>
+          <p class="lead">
+            When traffic patterns change and parking becomes a problem, the value of planned transportation becomes obvious.
+            We coordinate staging, timing, and pickup strategy to keep your schedule clean.
+          </p>
+        </div>
+
+        <div class="card-grid">
+          <article class="image-card">
+            <img alt="Luxury SUV for event transportation" src="Photos/6-7 Passenger (SUV) suburban and yukon together.png"/>
+            <div class="image-card-body">
+              <h3>Executive & Private Events</h3>
+              <p>Arrive professionally and keep the exit plan organized.</p>
+            </div>
+          </article>
+
+          <article class="image-card">
+            <img alt="Limousine Sprinter for group events" src="Photos/Limousine Sprinter Exterior.png"/>
+            <div class="image-card-body">
+              <h3>Group Transportation</h3>
+              <p>Keep your group together with coordinated timing.</p>
+            </div>
+          </article>
+
+          <article class="image-card">
+            <img alt="Party bus for large groups" src="Photos/30-35 Passenger Party Bus exterior.png"/>
+            <div class="image-card-body">
+              <h3>Large Group Nights</h3>
+              <p>Capacity solutions with a planned pickup strategy.</p>
+            </div>
+          </article>
+
+          <article class="image-card">
+            <img alt="Coach transportation for large movements" src="Photos/56 Passenger Exterior.png"/>
+            <div class="image-card-body">
+              <h3>Executive / Coach Options</h3>
+              <p>For corporate groups, long-distance travel, and high-capacity transportation.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="cta-row center top-gap">
+          <a class="btn btn-primary" href="#booking">Request Event Transportation</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- LONG DISTANCE -->
+    <section class="section" id="long-distance">
+      <div class="container">
+        <div class="section-head">
+          <h2>Long-Distance Transportation</h2>
+          <p class="lead">
+            Chauffeur-driven trips across Texas and surrounding regions — ideal for itinerary-based travel when privacy and comfort matter.
+          </p>
+        </div>
+
+        <div class="two-col">
+          <div class="content">
+            <h3>Door-to-Door, Scheduled and Confirmed</h3>
+            <ul class="clean-list">
+              <li><i class="fa-solid fa-road"></i> Planned routing with stops as needed</li>
+              <li><i class="fa-solid fa-map-location-dot"></i> Regional travel coordinated in advance</li>
+              <li><i class="fa-solid fa-clock"></i> Timing based on your itinerary, not driver availability</li>
+            </ul>
+
+            <div class="cta-row">
+              <a class="btn btn-primary" href="#booking">Request Long-Distance Transportation</a>
+            </div>
+          </div>
+
+          <div class="image-card">
+            <img alt="Luxury SUV for long-distance chauffeur travel" src="Photos/6-7 Passenger (SUV) suburban and yukon together.png"/>
+            <div class="image-card-body">
+              <h3>Comfort for Longer Trips</h3>
+              <p>Ideal for business travelers, families, and itinerary-based plans.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MOBILE NOTARY TEASER -->
+    <section class="section section-alt" id="mobile-notary">
+      <div class="container">
+        <div class="section-head">
+          <h2>Mobile Notary Services</h2>
+          <p class="lead">
+            Appointment-based mobile notary service delivered with chauffeur-level professionalism — discreet, punctual, and prepared.
+          </p>
+        </div>
+
+        <div class="two-col">
+          <div class="content">
+            <h3>Professional, Trust-Based Service</h3>
+            <p>
+              Mobile notary requests are handled by appointment, with a focus on confidentiality and proper conduct.
+              For the fastest service, use our dedicated notary request page.
+            </p>
+
+            <div class="cta-row">
+              <a class="btn btn-primary" href="notary.html">Request Mobile Notary Service</a>
+              <a class="btn btn-secondary" href="#booking">Request Chauffeur Service</a>
+            </div>
+          </div>
+
+          <div class="image-card">
+            <img alt="Professional standards and discretion" src="Photos/6-7 Passenger (SUV) suburban and yukon together.png"/>
+            <div class="image-card-body">
+              <h3>Discretion & Punctuality</h3>
+              <p>Appointment-based service, coordinated professionally.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FLEET -->
+    <section class="section" id="fleet">
+      <div class="container">
+        <div class="section-head">
+          <h2>Fleet</h2>
+          <p class="lead">
+            Vehicle selection is based on group size, luggage needs, itinerary, and the type of event.
+          </p>
+        </div>
+
+        <div class="card-grid">
+          <article class="image-card">
+            <img alt="Luxury SUV chauffeur service" src="Photos/6-7 Passenger (SUV) suburban and yukon together.png"/>
+            <div class="image-card-body">
+              <h3>Luxury SUVs</h3>
+              <p>Best for airport transfers, executive travel, families, and luggage-heavy trips.</p>
+            </div>
+          </article>
+
+          <article class="image-card">
+            <img alt="Stretch limousine transportation" src="Photos/10 pax lincoln sedan limo exterior.png"/>
+            <div class="image-card-body">
+              <h3>Limousines</h3>
+              <p>Classic transportation for weddings, formal events, and celebrations.</p>
+            </div>
+          </article>
+
+          <article class="image-card">
+            <img alt="Executive Sprinter service" src="Photos/14 passenger executive Sprinter interior.png"/>
+            <div class="image-card-body">
+              <h3>Sprinters</h3>
+              <p>Ideal for small groups, corporate teams, and event transportation with extra space.</p>
+            </div>
+          </article>
+
+          <article class="image-card">
+            <img alt="Party bus transportation" src="Photos/30-35 Pax Party Bus Interior.png"/>
+            <div class="image-card-body">
+              <h3>Party Buses</h3>
+              <p>Great for concerts, nightlife, celebrations, and group event nights.</p>
+            </div>
+          </article>
+
+          <article class="image-card">
+            <img alt="Executive and coach buses" src="Photos/56 passenger interior.png"/>
+            <div class="image-card-body">
+              <h3>Executive / Coach Buses</h3>
+              <p>For corporate groups, long-distance travel, and high-capacity transportation.</p>
+            </div>
+          </article>
+
+          <article class="image-card">
+            <img alt="Transit shuttle van" src="Photos/14 Passenger Transit Shuttle exterior.png"/>
+            <div class="image-card-body">
+              <h3>Shuttle / Transit Options</h3>
+              <p>Efficient group transfers when practicality and capacity matter.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="cta-row center top-gap">
+          <a class="btn btn-primary" href="#booking">Request a Fleet Recommendation</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOOKING -->
+    <section class="section section-alt" id="booking">
+      <div class="container">
+        <div class="section-head">
+          <h2>Request Chauffeur Service</h2>
+          <p class="lead">
+            Submit your request below and we’ll confirm availability, vehicle selection, and scheduling details.
+            All services are appointment-based and coordinated in advance.
+          </p>
+        </div>
+
+        <div class="embed-wrap">
+          <div id='bro_reservation'></div>
+          <input type='hidden' id='cid' value='AZeGyy3Ackdljq3JkvMgOQ%3d%3d' />
+          <input type='hidden' id='dbaid' value='luhMn%2bNNZqJoV6nB7ay3LA%3d%3d' />
+          <script type='text/javascript'>
+            (function () {
+              var po = document.createElement('script');
+              po.type = 'text/javascript';
+              po.async = true;
+              po.src = 'https://bookridesonline.com/web/reservation.js';
+              var s = document.getElementsByTagName('script')[0];
+              s.parentNode.insertBefore(po, s);
+            })();
+          </script>
+
+          <p class="embed-note">
+            <strong>Alternative Booking Option:</strong>
+            If you prefer, or if you experience difficulty submitting the form, you may complete your reservation directly using this secure link:
+            <a href="https://bookridesonline.com/book/?dbaid=luhMn%2bNNZqJoV6nB7ay3LA%3d%3d" target="_blank" rel="noopener">Secure Online Booking</a>
+          </p>
+        </div>
+
+        <div class="cta-row center top-gap">
+          <a class="btn btn-secondary" href="notary.html">Mobile Notary Page</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+
+      <div class="footer-col">
+        <div class="footer-brand">
+          <img src="Photos/Logo.png" alt="Agency Chauffeur Private Drivers" class="footer-logo"/>
+          <div>
+            <div class="footer-title">Agency Chauffeur Private Drivers</div>
+            <div class="footer-sub">Professional Chauffeurs • DFW</div>
+          </div>
+        </div>
+        <p class="top-gap">
+          Appointment-based chauffeur transportation delivered with discretion, punctuality, and proper conduct.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#airport-transfers">Airport Transfers</a></li>
+          <li><a href="#corporate-transportation">Corporate</a></li>
+          <li><a href="#special-events">Events</a></li>
+          <li><a href="#long-distance">Long-Distance</a></li>
+          <li><a href="#fleet">Fleet</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>More</h4>
+        <ul>
+          <li><a href="#booking">Request Service</a></li>
+          <li><a href="notary.html">Mobile Notary</a></li>
+          <li><a href="#top">Back to Top</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+18179696868">817-969-6868</a></li>
+          <li><a href="mailto:info@agency-limo.com">info@agency-limo.com</a></li>
+          <li><a href="#booking">Request Service</a></li>
+        </ul>
+      </div>
+
     </div>
 
-    <div class="footer-col">
-      <h4>Contact</h4>
-      <ul>
-        <li><a href="tel:+18179696868">817-969-6868</a></li>
-        <li><a href="mailto:info@agency-limo.com">info@agency-limo.com</a></li>
-        <li><a href="#booking">Request Service</a></li>
-      </ul>
+    <div class="container footer-bottom">
+      <p>© <span class="current-year"></span> Agency Chauffeur Private Drivers. All rights reserved.</p>
     </div>
+  </footer>
 
-  </div>
+</div><!-- /.site-frame -->
 
-  <div class="container footer-bottom">
-    <p>© <span class="current-year"></span> Agency Chauffeur Private Drivers. All rights reserved.</p>
-  </div>
-</footer>
-
-<script>
-  document.querySelectorAll(".current-year").forEach(el => el.textContent = new Date().getFullYear());
-
-  // Hero slider
-  (function() {
-    const slides = Array.from(document.querySelectorAll(".hero-slide"));
-    if (!slides.length) return;
-    let idx = 0;
-    setInterval(() => {
-      slides[idx].classList.remove("active");
-      idx = (idx + 1) % slides.length;
-      slides[idx].classList.add("active");
-    }, 6000);
-  })();
-
-  // Desktop dropdown
-  (function() {
-    const dropdown = document.querySelector(".dropdown");
-    if (!dropdown) return;
-    const btn = dropdown.querySelector(".dropdown-toggle");
-    const menu = dropdown.querySelector(".dropdown-menu");
-    const close = () => {
-      btn?.setAttribute("aria-expanded", "false");
-      menu?.classList.remove("open");
-    };
-    btn?.addEventListener("click", (e) => {
-      e.preventDefault();
-      const isOpen = btn.getAttribute("aria-expanded") === "true";
-      btn.setAttribute("aria-expanded", String(!isOpen));
-      menu.classList.toggle("open", !isOpen);
-    });
-    document.addEventListener("click", (e) => {
-      if (!dropdown.contains(e.target)) close();
-    });
-    document.addEventListener("keydown", (e) => {
-      if (e.key === "Escape") close();
-    });
-  })();
-
-  // Mobile menu
-  (function() {
-    const toggle = document.getElementById("mobileMenuToggle");
-    const nav = document.getElementById("mobileNav");
-    const overlay = document.getElementById("mobileMenuOverlay");
-    const closeBtn = document.getElementById("mobileMenuClose");
-
-    const openMenu = () => {
-      toggle?.setAttribute("aria-expanded", "true");
-      nav?.classList.add("open");
-      overlay?.classList.add("open");
-      overlay?.setAttribute("aria-hidden", "false");
-    };
-
-    const closeMenu = () => {
-      toggle?.setAttribute("aria-expanded", "false");
-      nav?.classList.remove("open");
-      overlay?.classList.remove("open");
-      overlay?.setAttribute("aria-hidden", "true");
-    };
-
-    toggle?.addEventListener("click", () => {
-      const isOpen = toggle.getAttribute("aria-expanded") === "true";
-      isOpen ? closeMenu() : openMenu();
-    });
-
-    closeBtn?.addEventListener("click", closeMenu);
-    overlay?.addEventListener("click", closeMenu);
-
-    nav?.querySelectorAll("a").forEach(a => a.addEventListener("click", closeMenu));
-
-    nav?.querySelectorAll(".mobile-dropdown-toggle").forEach(btn => {
-      btn.addEventListener("click", () => {
-        const expanded = btn.getAttribute("aria-expanded") === "true";
-        btn.setAttribute("aria-expanded", String(!expanded));
-        const menu = btn.nextElementSibling;
-        if (menu) menu.classList.toggle("open", !expanded);
-      });
-    });
-
-    document.addEventListener("keydown", (e) => {
-      if (e.key === "Escape") closeMenu();
-    });
-  })();
-</script>
+<!-- IMPORTANT: all behavior now comes from script.js -->
+<script src="script.js"></script>
 
 </body>
 </html>
