@@ -908,4 +908,48 @@ body.no-scroll{
   /* keep buttons usable and prevent edge-to-edge feel */
   .btn{ width: 100%; }
 }
-```0
+/* =========================
+   HERO IMAGE FIX (no stretching / no elongation)
+   ========================= */
+
+/* Ensure hero slides never stretch the background */
+.hero-slide{
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+}
+
+/* If you use an <img> anywhere in hero, force proper fit */
+.hero img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Control hero height so it doesn't become a tall blank billboard on mobile */
+.hero-slider{
+  min-height: 560px;
+}
+
+@media (max-width: 979px){
+  .hero-slider{
+    min-height: 560px;
+  }
+}
+
+@media (max-width: 520px){
+  .hero-slider{
+    min-height: 520px;
+  }
+}
+
+/* If your .hero-slide is absolutely positioned, keep it pinned */
+.hero-slider{
+  position: relative;
+  overflow: hidden;
+}
+.hero-slide{
+  position: absolute;
+  inset: 0;
+}
