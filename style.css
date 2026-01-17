@@ -1133,3 +1133,58 @@ body.no-scroll{
   position: relative !important;
   z-index: 5 !important;
 }
+/* =========================================================
+   MOBILE HERO CONTENT POSITION FIX
+   (puts the text back inside the hero box on phones)
+   ========================================================= */
+@media (max-width: 520px){
+
+  .hero .hero-slider{
+    position: relative !important;
+  }
+
+  /* Make hero content a layer inside the hero */
+  .hero .hero-content{
+    position: absolute !important;
+    inset: 0 !important;                 /* top/right/bottom/left: 0 */
+    z-index: 10 !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-end !important; /* text sits toward bottom like QTS */
+    align-items: flex-start !important;
+
+    padding: 18px 18px 22px !important;  /* breathing room */
+  }
+
+  /* Ensure text is visible */
+  .hero .hero-content,
+  .hero .hero-content h1,
+  .hero .hero-content p{
+    color: #fff !important;
+  }
+
+  /* Keep the overlay between image and text */
+  .hero .hero-overlay{
+    z-index: 2 !important;
+  }
+  .hero .hero-slide{
+    z-index: 1 !important;
+  }
+
+  /* CTA + pills spacing */
+  .hero .hero-cta{
+    width: 100%;
+    gap: 10px;
+    margin-top: 14px;
+  }
+  .hero .hero-cta .btn{
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero .trust-inline{
+    width: 100%;
+    margin-top: 14px;
+  }
+}
