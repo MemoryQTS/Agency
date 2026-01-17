@@ -953,3 +953,57 @@ body.no-scroll{
   position: absolute;
   inset: 0;
 }
+/* =========================
+   HERO BUTTON LEGIBILITY FIX
+   (prevents “Request Chauffeur Service” blending into hero image)
+   ========================= */
+
+/* Make sure hero content sits above overlays */
+.hero .hero-content{
+  position: relative;
+  z-index: 3;
+}
+
+/* Ensure overlays never sit above content */
+.hero-overlay{
+  z-index: 1;
+}
+.hero-slide{
+  z-index: 0;
+}
+
+/* Primary is already fine; force secondary to be solid */
+.hero .btn-secondary,
+.hero .btn-tertiary,
+.hero a.btn-secondary,
+.hero a.btn-tertiary{
+  background: rgba(245, 239, 226, 0.92) !important;  /* cream */
+  color: #101214 !important;
+  border: 1px solid rgba(0,0,0,0.18) !important;
+  box-shadow: 0 10px 22px rgba(0,0,0,0.18);
+  backdrop-filter: none !important;
+}
+
+/* On hover/tap */
+.hero .btn-secondary:hover,
+.hero .btn-tertiary:hover{
+  background: rgba(245, 239, 226, 1) !important;
+  transform: translateY(-1px);
+}
+
+/* If your “secondary” is being treated as disabled / low contrast anywhere */
+.hero .btn-secondary:active,
+.hero .btn-tertiary:active{
+  transform: translateY(0);
+}
+
+/* Mobile: keep buttons full-width and clear */
+@media (max-width: 520px){
+  .hero .hero-cta{
+    gap: 10px;
+  }
+  .hero .hero-cta .btn{
+    width: 100%;
+    justify-content: center;
+  }
+}
