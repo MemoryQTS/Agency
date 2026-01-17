@@ -896,3 +896,50 @@ body.no-scroll{
     font-size: 0.88rem;
   }
 }
+/* =========================================================
+   MOBILE HERO — FINAL POLISH (fix top clipping + tighten)
+   ========================================================= */
+@media (max-width: 520px){
+
+  /* Slightly shorter hero so next section doesn't peek in */
+  .hero-slider{
+    height: 70vh;
+    min-height: 470px;
+    max-height: 540px;
+  }
+
+  /* Keep content off the very top edge (fix clipped headline) */
+  .hero-content{
+    padding: 16px 16px 14px;
+    padding-top: calc(16px + env(safe-area-inset-top));
+  }
+
+  /* Tighten type + spacing just a touch */
+  .hero-content h1{
+    font-size: 1.75rem;
+    line-height: 1.08;
+    margin: 0 0 6px;
+  }
+
+  .hero-subtitle{
+    font-size: 0.95rem;
+    line-height: 1.45;
+    margin: 0 0 10px;
+  }
+
+  /* Slightly slimmer buttons */
+  .hero-cta{
+    gap: 7px;
+    margin: 0 0 10px;
+  }
+  .hero-cta .btn{
+    padding: 0.68rem 0.95rem;
+    font-size: 0.93rem;
+  }
+
+  /* Pills: thinner + less vertical demand */
+  .trust-pill{
+    padding: 0.38rem 0.62rem;
+    font-size: 0.86rem;
+  }
+}
