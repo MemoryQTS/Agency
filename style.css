@@ -1,12 +1,11 @@
 /* =========================================================
-   Agency Chauffeur Private Drivers — Heritage Professional UI
-   Palette from Logo:
-   - Deep Navy / Blue-Charcoal
-   - Gold / Brass
-   - Warm Cream / Parchment
-   Goal:
-   - Old-school chauffeur feel (formal, editorial, premium)
-   - Mobile menu + hero behave like QTS (overlay + scroll lock + padding)
+   Agency Chauffeur Private Drivers — style.css (CLEAN + FIXED)
+   - No stacked/conflicting hero hacks
+   - Mobile hero text stays INSIDE the hero (no out-of-frame)
+   - Hero images never stretch (cover)
+   - Desktop hero text is CENTERED (per your request)
+   - Mobile menu works with:
+     #mobileMenuToggle, #mobileMenuOverlay, #mobileNav, #mobileMenuClose
    ========================================================= */
 
 /* ------------------------ Reset / Base ------------------------ */
@@ -20,7 +19,7 @@ body{
   margin: 0;
   font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   line-height: 1.65;
-  background: #0b1117; /* page edge background */
+  background: #0b1117; /* edge background */
   color: #0e1620;
   overflow-x: hidden;
 }
@@ -32,46 +31,16 @@ ul{ margin: 0; padding: 0; }
 p{ margin: 0 0 1rem; }
 h1,h2,h3,h4{ margin: 0 0 0.7rem; line-height: 1.15; }
 
-h1{
-  font-family: "Playfair Display", serif;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  font-size: clamp(2.15rem, 4.3vw, 3.35rem);
-  color: var(--ink);
-}
-
-h2{
-  font-family: "Playfair Display", serif;
-  font-weight: 700;
-  letter-spacing: -0.01em;
-  font-size: clamp(1.75rem, 3vw, 2.45rem);
-  color: var(--ink);
-}
-
-h3{
-  font-weight: 850;
-  font-size: 1.12rem;
-  letter-spacing: -0.01em;
-  color: var(--ink);
-}
-
-h4{
-  font-weight: 850;
-  font-size: 1.02rem;
-  color: var(--ink);
-}
-
-/* ------------------------ Theme Tokens ------------------------ */
 :root{
   /* Logo-inspired core */
-  --navy: #0f2a3a;        /* deep navy */
-  --navy2: #123243;       /* slightly lighter navy */
-  --gold: #caa24a;        /* brass gold */
-  --gold2: #e1c57a;       /* highlight gold */
-  --cream: #f3efe6;       /* warm parchment */
-  --cream2: #fbf8f1;      /* lighter parchment */
-  --ink: #0e1a25;         /* text on cream */
-  --ink2: #1b2a38;        /* secondary text */
+  --navy: #0f2a3a;
+  --navy2: #123243;
+  --gold: #caa24a;
+  --gold2: #e1c57a;
+  --cream: #f3efe6;
+  --cream2: #fbf8f1;
+  --ink: #0e1a25;
+  --ink2: #1b2a38;
 
   --border: rgba(15,42,58,0.14);
   --border2: rgba(15,42,58,0.22);
@@ -82,20 +51,44 @@ h4{
   --radius: 18px;
   --radius2: 14px;
 
-  /* Page backgrounds */
-  --page: #0b1117;            /* outside/edge */
-  --surface: var(--cream);    /* main section background */
-  --surface2: var(--cream2);  /* alternating */
-  --surfaceNavy: #0e2230;     /* deep section background (limited use) */
+  --page: #0b1117;
+  --surface: var(--cream);
+  --surface2: var(--cream2);
 
-  /* Accent */
   --accent: var(--gold);
   --accent2: var(--gold2);
 
-  /* Header */
-  --header-bg: rgba(243,239,230,0.82);     /* cream glass */
+  --header-bg: rgba(243,239,230,0.82);
   --header-bg-solid: rgba(243,239,230,0.96);
+
   --focus: 0 0 0 3px rgba(202,162,74,0.35);
+}
+
+/* Typography */
+h1{
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  font-size: clamp(2.15rem, 4.3vw, 3.35rem);
+  color: var(--ink);
+}
+h2{
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  font-size: clamp(1.75rem, 3vw, 2.45rem);
+  color: var(--ink);
+}
+h3{
+  font-weight: 850;
+  font-size: 1.12rem;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+}
+h4{
+  font-weight: 850;
+  font-size: 1.02rem;
+  color: var(--ink);
 }
 
 /* Accessible skip link */
@@ -128,6 +121,28 @@ button:focus-visible{
   border-radius: 10px;
 }
 
+/* ------------------------ Page Wrapper Feel ------------------------ */
+body::before{
+  content:"";
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(1200px 800px at 15% 10%, rgba(202,162,74,0.10), transparent 55%),
+    radial-gradient(1100px 750px at 90% 20%, rgba(15,42,58,0.18), transparent 60%),
+    linear-gradient(180deg, #0b1117, #0b1117);
+  z-index: -2;
+}
+
+body::after{
+  content:"";
+  position: fixed;
+  inset: 18px;
+  background: var(--surface);
+  border-radius: 26px;
+  box-shadow: var(--shadow);
+  z-index: -1;
+}
+
 /* ------------------------ Buttons ------------------------ */
 .btn{
   display: inline-flex;
@@ -144,7 +159,6 @@ button:focus-visible{
   user-select: none;
   cursor: pointer;
 }
-
 .btn:active{ transform: scale(0.985); }
 
 .btn-primary{
@@ -170,40 +184,15 @@ button:focus-visible{
   color: var(--navy);
   border-color: rgba(15,42,58,0.22);
 }
-.btn-tertiary:hover{
-  background: rgba(15,42,58,0.07);
-}
+.btn-tertiary:hover{ background: rgba(15,42,58,0.07); }
 
 .btn-block{ width: 100%; }
-
-/* ------------------------ Page Wrapper Feel ------------------------ */
-/* Put the “site” on parchment, with a darker outer edge like your badge */
-body::before{
-  content:"";
-  position: fixed;
-  inset: 0;
-  background:
-    radial-gradient(1200px 800px at 15% 10%, rgba(202,162,74,0.10), transparent 55%),
-    radial-gradient(1100px 750px at 90% 20%, rgba(15,42,58,0.18), transparent 60%),
-    linear-gradient(180deg, #0b1117, #0b1117);
-  z-index: -2;
-}
-
-body::after{
-  content:"";
-  position: fixed;
-  inset: 18px;
-  background: var(--surface);
-  border-radius: 26px;
-  box-shadow: var(--shadow);
-  z-index: -1;
-}
 
 /* ------------------------ Header / Navigation ------------------------ */
 .main-header{
   position: sticky;
   top: 0;
-  z-index: 4000; /* keep above content */
+  z-index: 4000;
   background: var(--header-bg);
   backdrop-filter: blur(14px);
   border-bottom: 1px solid rgba(15,42,58,0.16);
@@ -217,7 +206,6 @@ body::after{
   padding: 0.85rem 0;
 }
 
-/* Brand */
 .brand{
   display: flex;
   align-items: center;
@@ -242,7 +230,6 @@ body::after{
   line-height: 1.1;
 }
 
-/* Mobile toggle */
 .mobile-toggle{
   display: inline-flex;
   align-items: center;
@@ -260,7 +247,6 @@ body::after{
   border-color: rgba(15,42,58,0.30);
 }
 
-/* Desktop nav */
 .desktop-nav{ display: none; }
 
 .main-nav{
@@ -331,10 +317,7 @@ body::after{
   font-size: 0.93rem;
   color: rgba(15,42,58,0.95);
 }
-
-.dropdown-menu a:hover{
-  background: rgba(15,42,58,0.06);
-}
+.dropdown-menu a:hover{ background: rgba(15,42,58,0.06); }
 
 .dropdown-label{
   padding: 0.35rem 0.72rem 0.25rem;
@@ -343,7 +326,6 @@ body::after{
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
-
 .dropdown-sep{
   height: 1px;
   background: rgba(15,42,58,0.12);
@@ -370,8 +352,8 @@ body::after{
   position: fixed;
   top: 0;
   right: 0;
-  height: 100vh;     /* fallback */
-  height: 100dvh;    /* modern */
+  height: 100vh;
+  height: 100dvh;
   width: min(420px, 92vw);
   max-width: 92vw;
   background: var(--header-bg-solid);
@@ -385,7 +367,6 @@ body::after{
   overflow: hidden;
   padding-bottom: env(safe-area-inset-bottom);
 }
-
 .mobile-nav.open{ transform: translateX(0); }
 
 .mobile-nav-head{
@@ -395,12 +376,10 @@ body::after{
   padding: 1rem 1rem 0.75rem;
   border-bottom: 1px solid rgba(15,42,58,0.16);
 }
-
 .mobile-brand{
   font-weight: 950;
   color: rgba(15,42,58,0.95);
 }
-
 .mobile-close{
   width: 40px;
   height: 40px;
@@ -440,13 +419,11 @@ body::after{
   border: 1px solid transparent;
   background: transparent;
 }
-
 .mobile-nav-links a:hover,
 .mobile-dropdown-toggle:hover{
   background: rgba(15,42,58,0.06);
   border-color: rgba(15,42,58,0.16);
 }
-
 .mobile-dropdown-toggle{ cursor: pointer; }
 
 .mobile-dropdown-menu{
@@ -484,7 +461,7 @@ body.no-scroll{
 /* ------------------------ Sections ------------------------ */
 .section{
   padding: clamp(2.9rem, 6vw, 4.6rem) 0;
-  background: transparent; /* parchment handled by body::after */
+  background: transparent;
 }
 
 .section-alt{
@@ -495,9 +472,7 @@ body.no-scroll{
   border-bottom: 1px solid rgba(15,42,58,0.10);
 }
 
-.section-head{
-  margin-bottom: 1.6rem;
-}
+.section-head{ margin-bottom: 1.6rem; }
 
 .lead{
   color: rgba(14,26,37,0.78);
@@ -505,59 +480,70 @@ body.no-scroll{
   max-width: 80ch;
 }
 
-/* ------------------------ Hero ------------------------ */
+/* ------------------------ HERO (FIXED) ------------------------ */
 .hero{ position: relative; padding: 0; }
 
+/* Hero “card” box */
 .hero-slider{
   position: relative;
-  min-height: clamp(560px, 76vh, 820px);
   overflow: hidden;
-  border-bottom: 1px solid rgba(15,42,58,0.10);
   border-radius: 22px;
   margin: 0 auto;
   width: min(1140px, calc(100% - 2rem));
   box-shadow: var(--shadow2);
+  border-bottom: 1px solid rgba(15,42,58,0.10);
+
+  /* Stable height (prevents elongation + keeps content in-frame) */
+  height: clamp(560px, 76vh, 820px);
 }
 
-/* slides are vehicle images */
+/* Slides as layered backgrounds (no stretching) */
 .hero-slide{
   position: absolute;
   inset: 0;
+  width: 100%;
+  height: 100%;
   background-size: cover;
-  background-position: center;
+  background-position: center center;
+  background-repeat: no-repeat;
   opacity: 0;
   transition: opacity 520ms ease;
-  transform: scale(1.02);
+  z-index: 0;
 }
 .hero-slide.active{ opacity: 1; }
 
-/* navy + gold overlay */
+/* Overlay */
 .hero-overlay{
   position: absolute;
   inset: 0;
+  z-index: 1;
   background:
     radial-gradient(1100px 560px at 20% 30%, rgba(202,162,74,0.22), transparent 56%),
     linear-gradient(90deg, rgba(15,42,58,0.88), rgba(15,42,58,0.38)),
     linear-gradient(180deg, rgba(0,0,0,0.10), rgba(0,0,0,0.45));
 }
 
+/* Content pinned inside hero */
 .hero-content{
   position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
   z-index: 2;
-  padding: 0 0 clamp(2.1rem, 5.5vw, 3.9rem);
-  max-width: 82ch;
-  margin-left: clamp(1rem, 4vw, 2.25rem);
-  margin-right: 1rem;
+
+  /* Desktop hero text centered (your request) */
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 1rem clamp(2.1rem, 5.5vw, 3.9rem);
+
+  max-width: 88ch;
 }
 
+/* Hero text styling */
 .hero-content h1{
   color: #fff;
   text-shadow: 0 16px 40px rgba(0,0,0,0.35);
 }
-
 .hero-subtitle{
   color: rgba(255,255,255,0.88);
   font-size: clamp(1.04rem, 2vw, 1.22rem);
@@ -566,9 +552,11 @@ body.no-scroll{
   text-shadow: 0 10px 26px rgba(0,0,0,0.32);
 }
 
+/* CTAs centered */
 .hero-cta{
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 0.75rem;
   margin-bottom: 1.05rem;
 }
@@ -577,6 +565,7 @@ body.no-scroll{
 .trust-inline{
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 0.55rem;
 }
 
@@ -594,6 +583,15 @@ body.no-scroll{
   backdrop-filter: blur(10px);
 }
 .trust-pill i{ color: var(--gold2); }
+
+/* Make secondary buttons readable on hero */
+.hero .btn-secondary,
+.hero .btn-tertiary{
+  background: rgba(245, 239, 226, 0.92);
+  color: #101214;
+  border: 1px solid rgba(0,0,0,0.18);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.18);
+}
 
 /* ------------------------ Layout blocks ------------------------ */
 .two-col{
@@ -622,14 +620,12 @@ body.no-scroll{
   display: grid;
   gap: 0.55rem;
 }
-
 .clean-list li{
   display: flex;
   align-items: flex-start;
   gap: 0.6rem;
   color: rgba(14,26,37,0.90);
 }
-
 .clean-list i{
   margin-top: 0.2rem;
   color: var(--gold);
@@ -650,14 +646,12 @@ body.no-scroll{
   box-shadow: var(--shadow2);
   transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
 }
-
 .feature-card i{
   color: var(--gold);
   font-size: 1.35rem;
   margin-bottom: 0.65rem;
   display: inline-block;
 }
-
 .feature-card:hover{
   transform: translateY(-2px);
   border-color: rgba(15,42,58,0.24);
@@ -679,24 +673,18 @@ body.no-scroll{
   box-shadow: var(--shadow2);
   transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
 }
-
 .image-card:hover{
   transform: translateY(-2px);
   border-color: rgba(15,42,58,0.24);
   box-shadow: 0 14px 40px rgba(0,0,0,0.16);
 }
-
 .image-card img{
   width: 100%;
   height: 232px;
   object-fit: cover;
   filter: saturate(1.02) contrast(1.02);
 }
-
-.image-card-body{
-  padding: 1rem 1rem 1.1rem;
-}
-
+.image-card-body{ padding: 1rem 1rem 1.1rem; }
 .image-card-body p{
   color: rgba(14,26,37,0.78);
   margin: 0;
@@ -787,105 +775,7 @@ body.no-scroll{
   font-size: 0.95rem;
 }
 
-/* =========================
-   HERO MOBILE FIX (QTS STYLE)
-   - prevent overlap/clipping
-   - add QTS-style padding/frame
-   ========================= */
-@media (max-width: 979px){
-
-  /* QTS-style breathing room around hero */
-  .hero{
-    padding-left: 0.85rem;
-    padding-right: 0.85rem;
-  }
-
-  /* hero becomes normal flow on mobile */
-  .hero-slider{
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    min-height: auto;
-    height: auto;
-    border-radius: 18px;
-    overflow: hidden;
-  }
-
-  /* background window height for mobile */
-  .hero-slider::before{
-    content: "";
-    display: block;
-    height: 520px;
-  }
-
-  /* IMPORTANT: remove absolute positioning on mobile */
-  .hero-content{
-    position: relative;
-    bottom: auto;
-    left: auto;
-    right: auto;
-    margin: 0;
-    padding: 2.2rem 1.1rem 1.6rem;
-    max-width: none;
-  }
-
-  .hero-subtitle{
-    font-size: 1.05rem;
-    line-height: 1.65;
-    margin-bottom: 1.1rem;
-  }
-
-  .hero-cta{
-    margin-bottom: 1rem;
-  }
-
-  /* pills sit as rows, not a floating block */
-  .trust-inline{
-    gap: 0.65rem;
-  }
-  .trust-pill{
-    width: 100%;
-    justify-content: flex-start;
-  }
-
-  /* slightly tighter header spacing on mobile */
-  .header-inner{
-    padding: 0.7rem 0;
-  }
-  .brand-text{
-    font-size: 0.98rem;
-    max-width: 70vw;
-  }
-
-  body::after{ inset: 10px; border-radius: 22px; }
-  .site-footer{ width: calc(100% - 2rem); border-radius: 18px; }
-}
-
-@media (max-width: 520px){
-  .container{ width: calc(100% - 1.25rem); }
-
-  .hero{
-    padding-left: 0.7rem;
-    padding-right: 0.7rem;
-  }
-
-  .hero-slider::before{
-    height: 560px;
-  }
-
-  .hero-content{
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
-  .btn{ width: 100%; }
-  .hero-cta .btn{ width: 100%; }
-
-  .brand-logo{ width: 40px; height: 40px; }
-  body::after{ inset: 8px; }
-}
-
-/* ------------------------ Responsive (general) ------------------------ */
+/* ------------------------ Responsive ------------------------ */
 @media (min-width: 980px){
   .desktop-nav{ display: block; }
   .mobile-toggle{ display: none; }
@@ -902,448 +792,57 @@ body.no-scroll{
   .two-col{ grid-template-columns: 1fr; }
   .card-grid{ grid-template-columns: 1fr; }
   .footer-grid{ grid-template-columns: 1fr; }
-}
 
-@media (max-width: 520px){
-  /* keep buttons usable and prevent edge-to-edge feel */
-  .btn{ width: 100%; }
-}
-/* =========================
-   HERO IMAGE FIX (no stretching / no elongation)
-   ========================= */
+  /* Slightly tighter header spacing */
+  .header-inner{ padding: 0.7rem 0; }
+  .brand-text{ font-size: 0.98rem; max-width: 70vw; }
 
-/* Ensure hero slides never stretch the background */
-.hero-slide{
-  background-size: cover !important;
-  background-position: center center !important;
-  background-repeat: no-repeat !important;
-}
+  /* Reduce “frame” inset a bit */
+  body::after{ inset: 10px; border-radius: 22px; }
+  .site-footer{ width: calc(100% - 2rem); border-radius: 18px; }
 
-/* If you use an <img> anywhere in hero, force proper fit */
-.hero img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-/* Control hero height so it doesn't become a tall blank billboard on mobile */
-.hero-slider{
-  min-height: 560px;
-}
-
-@media (max-width: 979px){
+  /* HERO mobile/tablet: keep stable height + keep content inside */
   .hero-slider{
-    min-height: 560px;
-  }
-}
-
-@media (max-width: 520px){
-  .hero-slider{
-    min-height: 520px;
-  }
-}
-
-/* If your .hero-slide is absolutely positioned, keep it pinned */
-.hero-slider{
-  position: relative;
-  overflow: hidden;
-}
-.hero-slide{
-  position: absolute;
-  inset: 0;
-}
-/* =========================
-   HERO BUTTON LEGIBILITY FIX
-   (prevents “Request Chauffeur Service” blending into hero image)
-   ========================= */
-
-/* Make sure hero content sits above overlays */
-.hero .hero-content{
-  position: relative;
-  z-index: 3;
-}
-
-/* Ensure overlays never sit above content */
-.hero-overlay{
-  z-index: 1;
-}
-.hero-slide{
-  z-index: 0;
-}
-
-/* Primary is already fine; force secondary to be solid */
-.hero .btn-secondary,
-.hero .btn-tertiary,
-.hero a.btn-secondary,
-.hero a.btn-tertiary{
-  background: rgba(245, 239, 226, 0.92) !important;  /* cream */
-  color: #101214 !important;
-  border: 1px solid rgba(0,0,0,0.18) !important;
-  box-shadow: 0 10px 22px rgba(0,0,0,0.18);
-  backdrop-filter: none !important;
-}
-
-/* On hover/tap */
-.hero .btn-secondary:hover,
-.hero .btn-tertiary:hover{
-  background: rgba(245, 239, 226, 1) !important;
-  transform: translateY(-1px);
-}
-
-/* If your “secondary” is being treated as disabled / low contrast anywhere */
-.hero .btn-secondary:active,
-.hero .btn-tertiary:active{
-  transform: translateY(0);
-}
-
-/* Mobile: keep buttons full-width and clear */
-@media (max-width: 520px){
-  .hero .hero-cta{
-    gap: 10px;
-  }
-  .hero .hero-cta .btn{
-    width: 100%;
-    justify-content: center;
-  }
-}
-/* =========================================================
-   HERO HEIGHT + SLIDE STACK FIX (Homepage + Notary)
-   - Prevents "elongated / super tall" hero
-   - Forces slides to be layered (not stacked)
-   ========================================================= */
-
-/* The hero container */
-.hero{
-  position: relative;
-}
-
-/* The slider defines the height of the hero */
-.hero .hero-slider{
-  position: relative;
-  overflow: hidden;
-  border-radius: var(--radius);
-  min-height: clamp(520px, 72vh, 720px);
-}
-
-/* Mobile: keep it tall enough for copy, but not ridiculous */
-@media (max-width: 520px){
-  .hero .hero-slider{
-    min-height: clamp(520px, 68vh, 640px);
-  }
-}
-
-/* CRITICAL: slides must be layered, not stacked */
-.hero .hero-slide{
-  position: absolute !important;
-  inset: 0 !important;
-  width: 100%;
-  height: 100%;
-  background-size: cover !important;
-  background-position: center center !important;
-  background-repeat: no-repeat !important;
-
-  opacity: 0;
-  transition: opacity 800ms ease;
-  z-index: 0;
-}
-
-/* Only the active slide shows */
-.hero .hero-slide.active{
-  opacity: 1;
-}
-
-/* Overlay should sit above slides, below content */
-.hero .hero-overlay{
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-}
-
-/* Content must sit above overlay */
-.hero .hero-content{
-  position: relative;
-  z-index: 2;
-}
-/* Mobile drawer open state */
-.mobile-nav{
-  transform: translateX(105%);
-  transition: transform 260ms ease;
-}
-.mobile-nav.open{
-  transform: translateX(0);
-}
-
-.mobile-overlay{
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 200ms ease;
-}
-.mobile-overlay.open{
-  opacity: 1;
-  pointer-events: auto;
-}
-
-/* Prevent background scroll when menu is open */
-.no-scroll{
-  overflow: hidden;
-  height: 100%;
-}
-/* =========================================
-   HERO IMAGE FIT FIX (NO STRETCHING)
-   ========================================= */
-
-/* Ensure hero slide uses proper background behavior */
-.hero-slide{
-  background-size: cover !important;     /* fill box without distortion */
-  background-position: center center !important;
-  background-repeat: no-repeat !important;
-}
-
-/* Mobile-specific tightening */
-@media (max-width: 520px){
-
-  .hero .hero-slider{
-    height: 78vh !important;
-    min-height: 520px !important;
-    max-height: 640px !important;
-  }
-
-  .hero .hero-slide{
-    background-size: cover !important;   /* critical */
-    background-position: center center !important;
-  }
-}
-/* =========================================
-   HERO TEXT LAYER FIX (bring text back)
-   ========================================= */
-
-.hero .hero-slider{ position: relative; overflow: hidden; }
-.hero .hero-slide{ position: absolute; inset: 0; z-index: 0; }
-.hero .hero-overlay{ position: absolute; inset: 0; z-index: 1; }
-
-/* IMPORTANT: hero content must be above everything */
-.hero .hero-content{
-  position: relative !important;
-  z-index: 5 !important;
-}
-
-/* If your hero content is wrapped differently in some pages */
-.hero .container.hero-content{
-  position: relative !important;
-  z-index: 5 !important;
-}
-/* =========================================================
-   MOBILE HERO CONTENT POSITION FIX
-   (puts the text back inside the hero box on phones)
-   ========================================================= */
-@media (max-width: 520px){
-
-  .hero .hero-slider{
-    position: relative !important;
-  }
-
-  /* Make hero content a layer inside the hero */
-  .hero .hero-content{
-    position: absolute !important;
-    inset: 0 !important;                 /* top/right/bottom/left: 0 */
-    z-index: 10 !important;
-
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: flex-end !important; /* text sits toward bottom like QTS */
-    align-items: flex-start !important;
-
-    padding: 18px 18px 22px !important;  /* breathing room */
-  }
-
-  /* Ensure text is visible */
-  .hero .hero-content,
-  .hero .hero-content h1,
-  .hero .hero-content p{
-    color: #fff !important;
-  }
-
-  /* Keep the overlay between image and text */
-  .hero .hero-overlay{
-    z-index: 2 !important;
-  }
-  .hero .hero-slide{
-    z-index: 1 !important;
-  }
-
-  /* CTA + pills spacing */
-  .hero .hero-cta{
-    width: 100%;
-    gap: 10px;
-    margin-top: 14px;
-  }
-  .hero .hero-cta .btn{
-    width: 100%;
-    justify-content: center;
-  }
-
-  .hero .trust-inline{
-    width: 100%;
-    margin-top: 14px;
-  }
-}
-/* =========================================================
-   MOBILE HERO CONTENT: PULL INTO FRAME + NO OVERFLOW
-   ========================================================= */
-@media (max-width: 520px){
-
-  /* Make sure the hero is the clipping boundary */
-  .hero .hero-slider{
-    position: relative !important;
-    overflow: hidden !important;
-  }
-
-  /* Put content inside frame and lift it up */
-  .hero .hero-content{
-    position: absolute !important;
-    left: 0 !important;
-    right: 0 !important;
-    top: 0 !important;
-    bottom: 0 !important;
-
-    z-index: 10 !important;
-
-    display: flex !important;
-    flex-direction: column !important;
-
-    /* KEY CHANGE: don't pin to the very bottom */
-    justify-content: flex-start !important;
-
-    /* Place content lower-mid, not outside the frame */
-    padding: 26px 18px 18px !important;
-  }
-
-  /* Create a controlled "bottom" zone without pushing out of frame */
-  .hero .hero-content > *{
-    max-width: 100%;
-  }
-
-  /* If you want the text to sit lower, use margin-top instead of justify-content:end */
-  .hero .hero-content h1{
-    margin-top: auto !important;     /* pushes headline + below content down */
-  }
-
-  /* But prevent it from going off-screen */
-  .hero .hero-content{
-    padding-bottom: 28px !important;
-  }
-
-  /* Make sure CTA + pills don’t overflow the hero */
-  .hero .hero-cta,
-  .hero .hero-trust{
-    width: 100%;
-  }
-
-  .hero .hero-trust{
-    margin-top: 12px;
-  }
-
-  .hero .trust-inline{
-    display: grid !important;
-    grid-template-columns: 1fr !important;
-    gap: 10px !important;
-  }
-
-  /* Ensure text is visible */
-  .hero .hero-content,
-  .hero .hero-content h1,
-  .hero .hero-content p{
-    color: #fff !important;
-  }
-}
-/* =========================================================
-   HERO (ONE SOURCE OF TRUTH)
-   - No ::before spacer
-   - Slides are background layers (cover, no stretch)
-   - Mobile keeps text INSIDE the hero
-   ========================================================= */
-
-.hero{ position: relative; padding: 0; }
-
-/* The hero “card” */
-.hero .hero-slider{
-  position: relative;
-  overflow: hidden;
-  border-radius: 22px;
-  width: min(1140px, calc(100% - 2rem));
-  margin: 0 auto;
-  box-shadow: var(--shadow2);
-
-  /* Desktop/tablet sizing */
-  height: clamp(560px, 76vh, 820px);
-}
-
-/* Slides */
-.hero .hero-slide{
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover !important;
-  background-position: center center !important;
-  background-repeat: no-repeat !important;
-  opacity: 0;
-  transition: opacity 520ms ease;
-  z-index: 0;
-}
-.hero .hero-slide.active{ opacity: 1; }
-
-/* Overlay */
-.hero .hero-overlay{
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  background:
-    radial-gradient(1100px 560px at 20% 30%, rgba(202,162,74,0.22), transparent 56%),
-    linear-gradient(90deg, rgba(15,42,58,0.88), rgba(15,42,58,0.38)),
-    linear-gradient(180deg, rgba(0,0,0,0.10), rgba(0,0,0,0.45));
-}
-
-/* Content sits ON TOP of overlay */
-.hero .hero-content{
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 2;
-
-  max-width: 82ch;
-  margin-left: clamp(1rem, 4vw, 2.25rem);
-  margin-right: 1rem;
-  padding: 0 0 clamp(1.75rem, 4.8vw, 3.5rem);
-}
-
-.hero .hero-content h1{ color: #fff; }
-.hero .hero-subtitle{ color: rgba(255,255,255,0.88); }
-
-/* Mobile: cap height + keep padding like QTS */
-@media (max-width: 520px){
-  .hero .hero-slider{
-    width: calc(100% - 1.4rem);
+    width: calc(100% - 2rem);
     border-radius: 18px;
     height: min(640px, 78vh);
+    min-height: 520px;
   }
 
-  .hero .hero-content{
-    margin-left: 1rem;
-    margin-right: 1rem;
-    padding-bottom: 1.25rem;
+  .hero-content{
+    text-align: center;
+    max-width: 92ch;
+    padding: 0 1rem 1.25rem;
   }
 
-  .hero .hero-cta .btn{
-    width: 100%;
-    justify-content: center;
-  }
-
-  .hero .trust-inline{
+  .trust-inline{
     display: grid;
     grid-template-columns: 1fr;
     gap: 10px;
+    justify-content: stretch;
   }
+  .trust-pill{ justify-content: flex-start; }
+
+  .hero-cta .btn{ width: 100%; }
+}
+
+@media (max-width: 520px){
+  .container{ width: calc(100% - 1.25rem); }
+  body::after{ inset: 8px; }
+
+  .brand-logo{ width: 40px; height: 40px; }
+
+  /* HERO phone: tighter width + still inside frame */
+  .hero-slider{
+    width: calc(100% - 1.4rem);
+    height: min(620px, 78vh);
+    min-height: 520px;
+  }
+
+  .hero-content{
+    padding: 0 1rem 1.1rem;
+  }
+
+  .btn{ width: 100%; }
+  .hero-cta .btn{ width: 100%; }
 }
