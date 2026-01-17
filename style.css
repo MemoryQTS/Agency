@@ -1,0 +1,272 @@
+/* =========================================================
+   Agency Chauffeur Services
+   One-Page Landing | Fleet Integrated
+   Brand-aligned to Agency logo (NOT QTS)
+   ========================================================= */
+
+/* ---------- Reset ---------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  line-height: 1.6;
+  background: #f4f1ea; /* cream base from logo */
+  color: #1b1f23;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* ---------- Brand Variables (AGENCY ONLY) ---------- */
+:root {
+  --navy: #1c2e3d;        /* logo navy */
+  --navy-dark: #142330;
+  --gold: #c9a24d;        /* logo gold */
+  --gold-soft: #e6cf8b;
+  --cream: #f4f1ea;
+  --border: rgba(0,0,0,0.12);
+  --text: #1b1f23;
+  --muted: #555;
+  --radius: 16px;
+  --shadow: 0 16px 40px rgba(0,0,0,0.18);
+}
+
+/* ---------- Layout ---------- */
+.container {
+  width: min(1120px, calc(100% - 2rem));
+  margin: 0 auto;
+}
+
+section {
+  padding: clamp(3rem, 6vw, 4.5rem) 0;
+}
+
+section[id] {
+  scroll-margin-top: 90px;
+}
+
+/* ---------- Typography ---------- */
+h1, h2 {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  color: var(--navy);
+}
+
+h1 {
+  font-size: clamp(2.2rem, 4.5vw, 3.4rem);
+  margin-bottom: 0.75rem;
+}
+
+h2 {
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  margin-bottom: 0.6rem;
+}
+
+h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--navy-dark);
+  margin-bottom: 0.4rem;
+}
+
+.section-lead {
+  max-width: 78ch;
+  color: var(--muted);
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.1rem;
+  border-radius: 999px;
+  font-weight: 700;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: transform 120ms ease, background 120ms ease;
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+.btn-primary {
+  background: linear-gradient(180deg, var(--gold-soft), var(--gold));
+  color: #1b1f23;
+}
+
+.btn-primary:hover {
+  filter: brightness(1.05);
+}
+
+/* ---------- Header ---------- */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(244,241,234,0.96);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.85rem 0;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.brand img {
+  height: 42px;
+  width: auto;
+  max-width: 140px;
+  object-fit: contain;
+}
+
+.brand span {
+  font-weight: 800;
+  color: var(--navy);
+  white-space: nowrap;
+}
+
+/* ---------- Navigation ---------- */
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+nav a {
+  padding: 0.55rem 0.85rem;
+  border-radius: 999px;
+  font-weight: 600;
+  color: var(--navy);
+}
+
+nav a:hover {
+  background: rgba(28,46,61,0.08);
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  min-height: 78vh;
+  display: flex;
+  align-items: center;
+  background:
+    linear-gradient(180deg, rgba(244,241,234,0.7), rgba(244,241,234,1));
+}
+
+.hero p {
+  max-width: 70ch;
+  color: #333;
+}
+
+/* ---------- Fleet Blocks ---------- */
+.fleet-block {
+  margin-top: 2rem;
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.fleet-inner {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+}
+
+.fleet-inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.fleet-content {
+  padding: 1.4rem 1.5rem;
+}
+
+.fleet-content p {
+  color: var(--muted);
+}
+
+.fleet-content ul {
+  margin-top: 0.75rem;
+  padding-left: 1.1rem;
+}
+
+.fleet-content li {
+  margin-bottom: 0.4rem;
+}
+
+/* ---------- Contact ---------- */
+#contact p {
+  font-size: 1.05rem;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  background: var(--navy-dark);
+  color: #eaeaea;
+  padding: 2.5rem 0 1.5rem;
+  text-align: center;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 980px) {
+  .fleet-inner {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 720px) {
+  nav ul {
+    display: none;
+  }
+
+  .brand img {
+    height: 34px;
+    max-width: 120px;
+  }
+
+  h1 {
+    font-size: clamp(1.9rem, 7vw, 2.6rem);
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
