@@ -1188,3 +1188,72 @@ body.no-scroll{
     margin-top: 14px;
   }
 }
+/* =========================================================
+   MOBILE HERO CONTENT: PULL INTO FRAME + NO OVERFLOW
+   ========================================================= */
+@media (max-width: 520px){
+
+  /* Make sure the hero is the clipping boundary */
+  .hero .hero-slider{
+    position: relative !important;
+    overflow: hidden !important;
+  }
+
+  /* Put content inside frame and lift it up */
+  .hero .hero-content{
+    position: absolute !important;
+    left: 0 !important;
+    right: 0 !important;
+    top: 0 !important;
+    bottom: 0 !important;
+
+    z-index: 10 !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+
+    /* KEY CHANGE: don't pin to the very bottom */
+    justify-content: flex-start !important;
+
+    /* Place content lower-mid, not outside the frame */
+    padding: 26px 18px 18px !important;
+  }
+
+  /* Create a controlled "bottom" zone without pushing out of frame */
+  .hero .hero-content > *{
+    max-width: 100%;
+  }
+
+  /* If you want the text to sit lower, use margin-top instead of justify-content:end */
+  .hero .hero-content h1{
+    margin-top: auto !important;     /* pushes headline + below content down */
+  }
+
+  /* But prevent it from going off-screen */
+  .hero .hero-content{
+    padding-bottom: 28px !important;
+  }
+
+  /* Make sure CTA + pills don’t overflow the hero */
+  .hero .hero-cta,
+  .hero .hero-trust{
+    width: 100%;
+  }
+
+  .hero .hero-trust{
+    margin-top: 12px;
+  }
+
+  .hero .trust-inline{
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 10px !important;
+  }
+
+  /* Ensure text is visible */
+  .hero .hero-content,
+  .hero .hero-content h1,
+  .hero .hero-content p{
+    color: #fff !important;
+  }
+}
