@@ -1089,3 +1089,28 @@ body.no-scroll{
   overflow: hidden;
   height: 100%;
 }
+/* =========================================
+   HERO IMAGE FIT FIX (NO STRETCHING)
+   ========================================= */
+
+/* Ensure hero slide uses proper background behavior */
+.hero-slide{
+  background-size: cover !important;     /* fill box without distortion */
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+}
+
+/* Mobile-specific tightening */
+@media (max-width: 520px){
+
+  .hero .hero-slider{
+    height: 78vh !important;
+    min-height: 520px !important;
+    max-height: 640px !important;
+  }
+
+  .hero .hero-slide{
+    background-size: cover !important;   /* critical */
+    background-position: center center !important;
+  }
+}
