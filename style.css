@@ -1114,3 +1114,22 @@ body.no-scroll{
     background-position: center center !important;
   }
 }
+/* =========================================
+   HERO TEXT LAYER FIX (bring text back)
+   ========================================= */
+
+.hero .hero-slider{ position: relative; overflow: hidden; }
+.hero .hero-slide{ position: absolute; inset: 0; z-index: 0; }
+.hero .hero-overlay{ position: absolute; inset: 0; z-index: 1; }
+
+/* IMPORTANT: hero content must be above everything */
+.hero .hero-content{
+  position: relative !important;
+  z-index: 5 !important;
+}
+
+/* If your hero content is wrapped differently in some pages */
+.hero .container.hero-content{
+  position: relative !important;
+  z-index: 5 !important;
+}
