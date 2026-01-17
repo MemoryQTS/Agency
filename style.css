@@ -943,3 +943,35 @@ body.no-scroll{
     font-size: 0.86rem;
   }
 }
+/* =========================================================
+   TRUST STRIP (moved outside hero)
+   ========================================================= */
+.trust-strip{
+  padding: 1.25rem 0 0.5rem;
+}
+
+.trust-inline-outside{
+  justify-content: center;
+}
+
+.trust-inline-outside .trust-pill{
+  background: rgba(15,42,58,0.06);
+  border: 1px solid rgba(15,42,58,0.14);
+  color: rgba(15,42,58,0.92);
+  backdrop-filter: none;
+}
+
+.trust-inline-outside .trust-pill i{
+  color: var(--gold);
+}
+
+@media (max-width: 520px){
+  .trust-strip{
+    padding: 1rem 0 0.25rem;
+  }
+  .trust-inline-outside{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
