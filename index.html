@@ -1,628 +1,1045 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1" name="viewport"/>
-  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-  <title>Agency Chauffeur Private Drivers | Professional Chauffeurs in DFW</title>
-  <meta name="description" content="Agency Chauffeur Private Drivers provides traditional, appointment-based chauffeur transportation across Dallas–Fort Worth including airport transfers, corporate travel, weddings, events, group transportation, and long-distance service. Mobile notary services available via dedicated notary page."/>
-  <meta name="robots" content="index,follow"/>
+  <title>Agency Chauffeur Private Drivers | Professional Chauffeur Service — DFW</title>
+  <meta name="description" content="Agency Chauffeur Private Drivers — 20+ years of professional chauffeur service across Dallas–Fort Worth. Airport transfers, corporate travel, weddings, events, limousines, party buses, and long-distance. Founder Chris Petersen. Call 817-969-6868." />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#080d14" />
 
   <!-- Canonical -->
-  <link rel="canonical" href="https://agency-limo.com/"/>
+  <link rel="canonical" href="https://agency-nine-pied.vercel.app/" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="Photos/Logo.png" />
+  <link rel="apple-touch-icon" href="Photos/Logo.png" />
 
   <!-- Open Graph -->
-  <meta property="og:type" content="website"/>
-  <meta property="og:title" content="Agency Chauffeur Private Drivers | Professional Chauffeurs in DFW"/>
-  <meta property="og:description" content="Old-school chauffeur standards: discretion, punctuality, and proper conduct — appointment-based service."/>
-  <meta property="og:url" content="https://agency-limo.com/"/>
-  <meta property="og:site_name" content="Agency Chauffeur Private Drivers"/>
-  <meta property="og:image" content="https://agency-limo.com/Photos/Logo.png"/>
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content="Agency Chauffeur Private Drivers | Professional Chauffeur Service — DFW" />
+  <meta property="og:description" content="20+ years of professional, appointment-based chauffeur service across Dallas–Fort Worth. Airport transfers, corporate travel, weddings, limousines, and group transportation." />
+  <meta property="og:url"         content="https://agency-nine-pied.vercel.app/" />
+  <meta property="og:site_name"   content="Agency Chauffeur Private Drivers" />
+  <meta property="og:image"       content="https://agency-nine-pied.vercel.app/Photos/18-pax-2024-cadillac-escalade.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="Agency Chauffeur Private Drivers | DFW" />
+  <meta name="twitter:description" content="Professional chauffeur service across Dallas–Fort Worth. 20+ years of experience. Call 817-969-6868." />
+  <meta name="twitter:image"       content="https://agency-nine-pied.vercel.app/Photos/18-pax-2024-cadillac-escalade.png" />
 
   <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
 
   <!-- Icons -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
 
   <!-- Styles -->
-  <link href="style.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css" />
 
-  <!-- Accent override (adjust to match Logo.png if desired) -->
-  <style>
-    :root{
-      --accent: #d4af37;
-      --accent2: #f2d17b;
-    }
-
-    .embed-wrap{
-      margin-top: 18px;
-      border: 1px solid var(--border);
-      background: rgba(10,10,12,0.55);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow2);
-      overflow: hidden;
-      padding: 18px;
-    }
-
-    .embed-note{
-      margin-top: 14px;
-      color: var(--muted);
-      font-size: 0.95rem;
-      line-height: 1.6;
-    }
-
-    .embed-note a{
-      text-decoration: underline;
-      font-weight: 700;
-    }
-
-    @media (max-width: 520px){
-      .embed-wrap{ padding: 14px; }
-    }
-  </style>
-
-  <!-- Schema -->
+  <!-- Schema Markup -->
   <script type="application/ld+json">
   {
-    "@context":"https://schema.org",
-    "@type":"TransportationService",
-    "name":"Agency Chauffeur Private Drivers",
-    "description":"Traditional, appointment-based chauffeur transportation across the Dallas–Fort Worth Metroplex including airport transfers, corporate travel, weddings, events, group transportation, and long-distance service.",
-    "areaServed":{"@type":"AdministrativeArea","name":"Dallas–Fort Worth Metroplex"},
-    "provider":{
-      "@type":"LocalBusiness",
-      "name":"Agency Chauffeur Private Drivers",
-      "telephone":"817-969-6868",
-      "email":"info@agency-limo.com",
-      "url":"https://agency-limo.com/"
-    }
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": ["LocalBusiness", "TransportationService"],
+        "@id": "https://agency-nine-pied.vercel.app/#business",
+        "name": "Agency Chauffeur Private Drivers",
+        "alternateName": "Agency Chauffeur Services",
+        "description": "Professional, appointment-based chauffeur transportation across the Dallas–Fort Worth Metroplex including airport transfers, corporate travel, weddings, events, limousines, party buses, group transportation, and long-distance service. Founded by Christopher Petersen with 20+ years of experience.",
+        "url": "https://agency-nine-pied.vercel.app/",
+        "telephone": "+18179696868",
+        "email": "info@agency-limo.com",
+        "logo": "https://agency-nine-pied.vercel.app/Photos/Logo.png",
+        "image": "https://agency-nine-pied.vercel.app/Photos/18-pax-2024-cadillac-escalade.png",
+        "priceRange": "$$$$",
+        "founder": {
+          "@type": "Person",
+          "name": "Christopher Petersen"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Fort Worth",
+          "addressRegion": "TX",
+          "postalCode": "76100",
+          "addressCountry": "US"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 32.7555,
+          "longitude": -97.3308
+        },
+        "areaServed": [
+          {"@type": "City", "name": "Fort Worth"},
+          {"@type": "City", "name": "Dallas"},
+          {"@type": "City", "name": "Arlington"},
+          {"@type": "City", "name": "Frisco"},
+          {"@type": "City", "name": "Plano"},
+          {"@type": "City", "name": "Irving"},
+          {"@type": "City", "name": "Grapevine"},
+          {"@type": "City", "name": "Southlake"},
+          {"@type": "AdministrativeArea", "name": "Dallas–Fort Worth Metroplex"}
+        ],
+        "hasMap": "https://maps.google.com/?q=Fort+Worth+TX",
+        "openingHoursSpecification": [{
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+          "opens": "00:00",
+          "closes": "23:59"
+        }],
+        "serviceType": ["Airport Transfer","Corporate Transportation","Wedding Transportation","Event Transportation","Limousine Service","Party Bus","Long-Distance Chauffeur","Group Transportation","Mobile Notary"]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://agency-nine-pied.vercel.app/"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What areas does Agency Chauffeur serve?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We serve the entire Dallas–Fort Worth Metroplex including Dallas, Fort Worth, Arlington, Frisco, Plano, Irving, Grapevine, Southlake, Denton, McKinney, and all surrounding communities. Long-distance travel throughout Texas and beyond is also available."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I book a chauffeur?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You can book directly through our secure online booking form on this page, or call us at 817-969-6868. All services are appointment-based and confirmed in advance."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What vehicles are available?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Our fleet includes luxury SUVs (Suburban, Yukon), executive sedans, stretch limousines, Cadillac Escalade limos, executive Sprinter vans, party buses (20–45 passenger), mini buses (25 passenger), and full coach buses (up to 56 passengers)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you offer airport transportation?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. We provide professional airport transfers to and from Dallas/Fort Worth International Airport (DFW), Dallas Love Field (DAL), and private terminals. Flight monitoring and meet-and-greet service available."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you provide a mobile notary service?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Agency Chauffeur Private Drivers offers mobile notary services delivered with the same professional standards as our chauffeur work — appointment-based, discreet, and punctual. Visit our notary page to submit a request."
+            }
+          }
+        ]
+      }
+    ]
   }
   </script>
 
 </head>
 
 <body>
+
 <a class="skip-link" href="#mainContent">Skip to main content</a>
 
-<!-- =========================
-     FIX B: MOBILE OVERLAY + MOBILE NAV MUST BE OUTSIDE THE FRAME
-     ========================= -->
-<div aria-hidden="true" class="mobile-overlay" id="mobileMenuOverlay"></div>
+<!-- ══════════════════════════════════════════
+     MOBILE OVERLAY + DRAWER
+══════════════════════════════════════════ -->
+<div id="mobileMenuOverlay" class="mobile-overlay" aria-hidden="true"></div>
 
-<nav aria-label="Mobile" class="mobile-nav" id="mobileNav" aria-hidden="true">
+<nav id="mobileNav" class="mobile-nav" aria-label="Mobile navigation" aria-hidden="true">
   <div class="mobile-nav-head">
     <span class="mobile-brand">Menu</span>
-    <button aria-label="Close menu" class="mobile-close" type="button" id="mobileMenuClose">
-      <i aria-hidden="true" class="fa-solid fa-xmark"></i>
+    <button id="mobileMenuClose" class="mobile-close" aria-label="Close menu" type="button">
+      <i class="fa-solid fa-xmark" aria-hidden="true"></i>
     </button>
   </div>
 
   <ul class="mobile-nav-links">
-    <li><a aria-current="page" href="#top">Home</a></li>
+    <li><a href="#top">Home</a></li>
 
     <li class="mobile-dropdown">
-      <button aria-expanded="false" class="mobile-dropdown-toggle" type="button">
-        Services <i aria-hidden="true" class="fas fa-chevron-down"></i>
+      <button class="mobile-dropdown-toggle" aria-expanded="false" type="button">
+        Services <i class="fas fa-chevron-down" aria-hidden="true"></i>
       </button>
-      <ul aria-label="Services" class="mobile-dropdown-menu">
-        <li class="dropdown-label">Chauffeur Transportation</li>
-        <li><a href="#airport-transfers">Airport Transfers</a></li>
-        <li><a href="#corporate-transportation">Corporate & Executive</a></li>
+      <ul class="mobile-dropdown-menu" aria-label="Services submenu">
+        <li><a href="#airport">Airport Transfers</a></li>
+        <li><a href="#corporate">Corporate & Executive</a></li>
+        <li><a href="#events">Weddings & Events</a></li>
         <li><a href="#long-distance">Long-Distance</a></li>
-        <li><a href="#special-events">Special Events</a></li>
-        <li class="dropdown-sep"></li>
-        <li class="dropdown-label">More</li>
         <li><a href="#fleet">Fleet</a></li>
-        <li><a href="#booking">Booking</a></li>
-        <li><a href="notary.html">Mobile Notary</a></li>
       </ul>
     </li>
 
     <li><a href="#fleet">Fleet</a></li>
+    <li><a href="#faq">FAQ</a></li>
     <li><a href="notary.html">Mobile Notary</a></li>
     <li><a href="#booking">Request Service</a></li>
   </ul>
 
   <div class="mobile-cta">
-    <a class="btn btn-primary btn-block" href="#booking">Request Service</a>
+    <a href="tel:+18179696868" class="btn btn-ghost btn-block" style="margin-bottom:0.6rem;">
+      <i class="fas fa-phone" aria-hidden="true"></i> 817-969-6868
+    </a>
+    <a href="#booking" class="btn btn-primary btn-block">Book a Ride</a>
   </div>
 </nav>
 
-<!-- =========================
-     FIX B: SITE FRAME WRAPPER
-     ========================= -->
+<!-- ══════════════════════════════════════════
+     SITE FRAME
+══════════════════════════════════════════ -->
 <div class="site-frame">
 
-  <!-- HEADER -->
+  <!-- ── HEADER ── -->
   <header class="main-header" id="mainHeader">
     <div class="container header-inner">
-      <a aria-label="Agency Chauffeur Private Drivers Home" class="brand" href="#top">
-        <img alt="Agency Chauffeur Private Drivers logo" class="brand-logo" src="Photos/Logo.png"/>
-        <span class="brand-text">Agency Chauffeur Private Drivers</span>
+
+      <a href="#top" class="brand" aria-label="Agency Chauffeur Private Drivers — home">
+        <img src="Photos/Logo.png" alt="Agency Chauffeur Private Drivers logo" class="brand-logo" width="44" height="44" />
+        <span class="brand-text">
+          Agency Chauffeur
+          <span class="sub">Private Drivers</span>
+        </span>
       </a>
 
-      <button aria-controls="mobileNav" aria-expanded="false" aria-label="Open menu" class="mobile-toggle" id="mobileMenuToggle">
-        <i aria-hidden="true" class="fa-solid fa-bars"></i>
+      <button id="mobileMenuToggle" class="mobile-toggle" aria-expanded="false" aria-controls="mobileNav" aria-label="Open navigation menu">
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
       </button>
 
-      <!-- Desktop Nav -->
-      <nav aria-label="Primary" class="desktop-nav">
+      <nav class="desktop-nav" aria-label="Primary navigation">
         <ul class="main-nav">
-          <li><a aria-current="page" href="#top">Home</a></li>
+          <li><a href="#top" aria-current="page">Home</a></li>
 
           <li class="dropdown">
-            <button aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" type="button">
-              Services <i aria-hidden="true" class="fas fa-chevron-down"></i>
+            <button class="dropdown-toggle" type="button" aria-expanded="false" aria-haspopup="true">
+              Services <i class="fas fa-chevron-down" aria-hidden="true" style="font-size:0.65rem;"></i>
             </button>
-            <ul aria-label="Services" class="dropdown-menu">
-              <li class="dropdown-label">Chauffeur Transportation</li>
-              <li><a href="#airport-transfers">Airport Transfers</a></li>
-              <li><a href="#corporate-transportation">Corporate & Executive</a></li>
+            <ul class="dropdown-menu" aria-label="Services menu">
+              <li class="dropdown-label">Transportation</li>
+              <li><a href="#airport">Airport Transfers</a></li>
+              <li><a href="#corporate">Corporate & Executive</a></li>
+              <li><a href="#events">Weddings & Events</a></li>
               <li><a href="#long-distance">Long-Distance</a></li>
-              <li><a href="#special-events">Special Events</a></li>
-
               <li class="dropdown-sep"></li>
-
               <li class="dropdown-label">More</li>
               <li><a href="#fleet">Fleet</a></li>
-              <li><a href="#booking">Booking</a></li>
               <li><a href="notary.html">Mobile Notary</a></li>
             </ul>
           </li>
 
           <li><a href="#fleet">Fleet</a></li>
+          <li><a href="#faq">FAQ</a></li>
           <li><a href="notary.html">Mobile Notary</a></li>
 
-          <li class="nav-cta">
-            <a class="btn btn-primary" href="#booking">Request Service</a>
+          <li class="nav-phone">
+            <a href="tel:+18179696868">
+              <i class="fas fa-phone" aria-hidden="true"></i> 817-969-6868
+            </a>
+          </li>
+
+          <li class="nav-book">
+            <a href="#booking">Book a Ride</a>
           </li>
         </ul>
       </nav>
+
     </div>
   </header>
 
+  <!-- ══════════════════════════════════════════
+       MAIN
+  ══════════════════════════════════════════ -->
   <main id="mainContent">
 
-    <!-- HERO -->
-    <section class="hero" id="top">
-      <div class="hero-slider">
-        <div class="hero-slide active" style="background-image:url('Photos/6-7 Passenger (SUV) suburban and yukon together.png')"></div>
-        <div class="hero-slide" style="background-image:url('Photos/18-pax-2024-cadillac-escalade.png')"></div>
-        <div class="hero-slide" style="background-image:url('Photos/2025_limousine_sprinter_interior.jpg')"></div>
+    <!-- ── HERO ── -->
+    <section class="hero" id="top" aria-label="Hero">
+      <div class="hero-slider" id="heroSlider" aria-hidden="true">
+        <div class="hero-slide active" style="background-image:url('Photos/AI Limo &amp; SUV at AT&amp;T Stadium.png')"></div>
+        <div class="hero-slide"        style="background-image:url('Photos/18-pax-2024-cadillac-escalade.png')"></div>
+        <div class="hero-slide"        style="background-image:url('Photos/the-star-with-gmc-and-chauffeur.png')"></div>
+        <div class="hero-slide"        style="background-image:url('Photos/2025_limousine_sprinter_interior.jpg')"></div>
+        <div class="hero-slide"        style="background-image:url('Photos/Black-SUV-corporate-executive.jpg')"></div>
+        <div class="hero-overlay"></div>
+      </div>
 
-        <div aria-hidden="true" class="hero-overlay"></div>
+      <!-- Faint logo watermark — badge aesthetic -->
+      <img src="Photos/Logo.png" class="hero-watermark" alt="" aria-hidden="true" />
 
-        <div class="container hero-content">
-          <h1>Chauffeur Standards — Done Properly</h1>
-          <p class="hero-subtitle">
-            Agency Chauffeur Private Drivers provides appointment-based chauffeur transportation across Dallas–Fort Worth for airport transfers,
-            corporate travel, weddings, events, group transportation, and long-distance itineraries — delivered with discretion, punctuality,
-            and professional conduct.
-          </p>
+      <div class="container hero-content">
+        <span class="eyebrow">Fort Worth &amp; Dallas–Fort Worth</span>
+        <h1>
+          Chauffeur Standards<br>
+          <em>Done Properly.</em>
+        </h1>
+        <p class="hero-subtitle">
+          Professional, appointment-based chauffeur transportation across the DFW Metroplex — airport transfers, corporate travel, weddings, events, and long-distance itineraries. Founded by Christopher Petersen with over 20 years of experience.
+        </p>
 
-          <div class="hero-cta">
-            <a class="btn btn-primary" href="#booking">Request Service</a>
-            <a class="btn btn-secondary" href="#airport-transfers">Airport Transfers</a>
-            <a class="btn btn-secondary" href="#fleet">View Fleet</a>
-          </div>
+        <div class="cta-row">
+          <a href="#booking" class="btn btn-primary">
+            <i class="fas fa-calendar-check" aria-hidden="true"></i> Book a Ride
+          </a>
+          <a href="tel:+18179696868" class="btn btn-secondary">
+            <i class="fas fa-phone" aria-hidden="true"></i> 817-969-6868
+          </a>
+        </div>
+
+        <div class="hero-pills" role="list">
+          <span class="hero-pill" role="listitem">Airport Transfers</span>
+          <span class="hero-pill" role="listitem">Corporate Travel</span>
+          <span class="hero-pill" role="listitem">Weddings &amp; Events</span>
+          <span class="hero-pill" role="listitem">Party Buses</span>
+          <span class="hero-pill" role="listitem">Coach Buses</span>
+        </div>
+      </div>
+
+      <div class="hero-dots" id="heroDots" role="tablist" aria-label="Hero slides"></div>
+
+      <div class="hero-scroll" aria-hidden="true">
+        <div class="scroll-line"></div>
+        <span>Scroll</span>
+      </div>
+    </section>
+
+    <!-- ── TRUST BAR ── -->
+    <section class="trust-bar" aria-label="Key facts">
+      <div class="container trust-bar-inner">
+        <div class="trust-item reveal">
+          <span class="trust-num">20+</span>
+          <span class="trust-label">Years Experience</span>
+        </div>
+        <div class="trust-item reveal reveal-delay-1">
+          <span class="trust-num">#1</span>
+          <span class="trust-label">Rated on Thumbtack</span>
+        </div>
+        <div class="trust-item reveal reveal-delay-2">
+          <span class="trust-num">DFW</span>
+          <span class="trust-label">Full Metroplex Coverage</span>
+        </div>
+        <div class="trust-item reveal reveal-delay-3">
+          <span class="trust-num">24/7</span>
+          <span class="trust-label">Appointment-Based</span>
+        </div>
+        <div class="trust-item reveal reveal-delay-4">
+          <span class="trust-num">★★★★★</span>
+          <span class="trust-label">Professional Standard</span>
         </div>
       </div>
     </section>
-</section>
 
-<section class="section trust-strip" aria-label="Service standards">
-  <div class="container">
-    <div class="trust-inline trust-inline-outside">
-      <span class="trust-pill"><i class="fa-solid fa-user-tie"></i> Professional Chauffeurs</span>
-      <span class="trust-pill"><i class="fa-solid fa-clock"></i> Planned & Confirmed Scheduling</span>
-      <span class="trust-pill"><i class="fa-solid fa-shield-halved"></i> Discreet & Reliable</span>
-    </div>
-  </div>
-</section>
-    <!-- WHY / VALUE -->
-    <section class="section">
+    <!-- ── ABOUT ── -->
+    <section class="section" id="about">
+      <div class="container two-col">
+
+        <div class="about-img-wrap reveal">
+          <img
+            src="Photos/the-star-with-gmc-and-chauffeur.png"
+            alt="Agency Chauffeur professional driver standing beside a luxury SUV at The Star in Frisco"
+            class="about-img"
+            loading="lazy"
+            width="600"
+            height="750"
+          />
+          <div class="about-img-accent">
+            <span class="num">20+</span>
+            <span class="txt">Years in<br>the Business</span>
+          </div>
+        </div>
+
+        <div class="about-content reveal reveal-delay-1">
+          <span class="eyebrow">The Agency Standard</span>
+          <h2>Old-School Professionalism.<br>No Shortcuts.</h2>
+          <div class="gold-rule"></div>
+          <p>
+            Agency Chauffeur Private Drivers was founded by Christopher Petersen — a chauffeur professional with over two decades of experience serving executives, families, wedding parties, and VIPs across the Dallas–Fort Worth Metroplex.
+          </p>
+          <p>
+            Every assignment is taken seriously. Vehicles are immaculate. Drivers arrive in professional attire. Routes are pre-planned. Clients receive the kind of service that was standard long before rideshare apps redefined expectations.
+          </p>
+
+          <ul class="clean-list" role="list">
+            <li>Professional appearance, punctual arrival — every time</li>
+            <li>Refreshments, phone chargers, and privacy on request</li>
+            <li>Pre-planned routes, real-time monitoring, no surprises</li>
+            <li>Appointment-confirmed — no surge pricing, no uncertainty</li>
+          </ul>
+
+          <div class="cta-row">
+            <a href="#booking" class="btn btn-primary">Request Service</a>
+            <a href="tel:+18179696868" class="btn btn-secondary">Call to Discuss</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ── SERVICES ── -->
+    <section class="section section-dark" id="services">
       <div class="container">
-        <div class="section-head">
-          <h2>Not Rideshare. Professional Chauffeurs.</h2>
-          <p class="lead">
-            Agency Chauffeur Private Drivers is built for clients who value preparation, accountability, and proper conduct.
-            Every reservation is scheduled, confirmed, and managed with a plan.
-          </p>
+        <div class="section-head reveal">
+          <span class="eyebrow">What We Do</span>
+          <h2>Professional Chauffeur Services</h2>
+          <div class="gold-rule"></div>
+          <p>Appointment-based transportation for any occasion — delivered with discretion and proper conduct.</p>
         </div>
 
-        <div class="feature-grid">
-          <article class="feature-card">
-            <i class="fa-solid fa-user-tie"></i>
-            <h3>Professional Standards</h3>
-            <p>Discretion, presentation, and a service model designed for private clients and executive travel.</p>
-          </article>
+        <div class="services-grid">
 
-          <article class="feature-card">
-            <i class="fa-solid fa-route"></i>
-            <h3>Planned Transportation</h3>
-            <p>Confirmed pickups and routing decisions based on timing and real-world traffic patterns.</p>
-          </article>
+          <div class="service-card reveal" id="airport">
+            <i class="fas fa-plane-arrival service-icon" aria-hidden="true"></i>
+            <h3>Airport Transfers</h3>
+            <p>DFW International and Dallas Love Field. Flight monitoring, meet-and-greet, and luggage assistance included. No surge pricing — fixed, confirmed rates.</p>
+            <a href="#booking" class="card-link">Book Transfer <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
 
-          <article class="feature-card">
-            <i class="fa-solid fa-people-group"></i>
-            <h3>Group Coordination</h3>
-            <p>From Sprinters to coach options, group travel stays organized and on schedule.</p>
-          </article>
+          <div class="service-card reveal reveal-delay-1" id="corporate">
+            <i class="fas fa-briefcase service-icon" aria-hidden="true"></i>
+            <h3>Corporate &amp; Executive</h3>
+            <p>Discreet, reliable ground transportation for business travelers, executive teams, and client visits. Multi-stop itineraries, on-call availability, and full confidentiality.</p>
+            <a href="#booking" class="card-link">Book Corporate <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
 
-          <article class="feature-card">
-            <i class="fa-solid fa-shield-halved"></i>
-            <h3>Trust & Reliability</h3>
-            <p>Consistent execution matters most on airport mornings, formal events, and high-demand weekends.</p>
-          </article>
+          <div class="service-card reveal reveal-delay-2" id="events">
+            <i class="fas fa-rings-wedding service-icon" aria-hidden="true"></i>
+            <h3>Weddings &amp; Formal Events</h3>
+            <p>Limousines, SUVs, and Sprinters for wedding days, proms, anniversaries, galas, and milestone events. Coordinated timing and impeccable presentation.</p>
+            <a href="#booking" class="card-link">Book Event <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+
+          <div class="service-card reveal reveal-delay-1" id="long-distance">
+            <i class="fas fa-route service-icon" aria-hidden="true"></i>
+            <h3>Long-Distance Travel</h3>
+            <p>Point-to-point and multi-city itineraries across Texas and beyond. Comfortable, professional travel without the overhead of air travel logistics.</p>
+            <a href="#booking" class="card-link">Plan Route <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+
+          <div class="service-card reveal reveal-delay-2">
+            <i class="fas fa-music service-icon" aria-hidden="true"></i>
+            <h3>Concerts &amp; Sports Events</h3>
+            <p>Safe transportation to and from AT&amp;T Stadium, American Airlines Center, Globe Life Field, Dickies Arena, Dos Equis Pavilion, and all major DFW venues.</p>
+            <a href="#booking" class="card-link">Book Tonight <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+
+          <div class="service-card reveal reveal-delay-3">
+            <i class="fas fa-users service-icon" aria-hidden="true"></i>
+            <h3>Group &amp; Charter Transportation</h3>
+            <p>From 6 to 56 passengers — Sprinters, party buses, mini buses, and full coach buses for corporate groups, wedding parties, and special occasions.</p>
+            <a href="#booking" class="card-link">Get Group Quote <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+
         </div>
       </div>
     </section>
 
-    <!-- AIRPORT -->
-    <section class="section section-alt" id="airport-transfers">
-      <div class="container">
-        <div class="section-head">
-          <h2>Airport Transfers</h2>
-          <p class="lead">
-            Reliable, pre-arranged transportation to and from DFW International Airport, Dallas Love Field,
-            and regional airports — with scheduling you can plan around.
-          </p>
-        </div>
-
-        <div class="two-col">
-          <div class="content">
-            <h3>Airport Travel Without Guesswork</h3>
-            <p>
-              We coordinate timing in advance, confirm details, and handle pickups with the professionalism required
-              for early departures, tight connections, and client-facing trips.
-            </p>
-
-            <ul class="clean-list">
-              <li><i class="fa-solid fa-plane"></i> DFW & DAL chauffeur transportation</li>
-              <li><i class="fa-solid fa-suitcase-rolling"></i> Vehicle selection based on luggage and group size</li>
-              <li><i class="fa-solid fa-clock"></i> Early-morning and late-night coverage by appointment</li>
-            </ul>
-
-            <div class="cta-row">
-              <a class="btn btn-primary" href="#booking">Request Airport Transportation</a>
-              <a class="btn btn-secondary" href="#fleet">View Fleet Options</a>
-            </div>
-          </div>
-
-          <div class="image-card">
-            <img alt="Luxury SUV airport chauffeur service" src="Photos/6-7 Passenger (SUV) suburban and yukon together.png"/>
-            <div class="image-card-body">
-              <h3>Professional Pickup Planning</h3>
-              <p>Airport transportation designed around your itinerary — not app availability.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CORPORATE -->
-    <section class="section" id="corporate-transportation">
-      <div class="container">
-        <div class="section-head">
-          <h2>Corporate & Executive Transportation</h2>
-          <p class="lead">
-            Professional transportation for executives, client hosting, meetings, conferences, and itinerary-based travel.
-          </p>
-        </div>
-
-        <div class="two-col">
-          <div class="content">
-            <h3>Business Travel with Proper Conduct</h3>
-            <ul class="clean-list">
-              <li><i class="fa-solid fa-briefcase"></i> Executive point-to-point and airport transfers</li>
-              <li><i class="fa-solid fa-building"></i> Conferences, conventions, and corporate outings</li>
-              <li><i class="fa-solid fa-handshake"></i> Client-facing transportation with consistent standards</li>
-            </ul>
-
-            <div class="cta-row">
-              <a class="btn btn-primary" href="#booking">Request Corporate Transportation</a>
-            </div>
-          </div>
-
-          <div class="image-card">
-            <img alt="Executive Sprinter chauffeur service" src="Photos/executive Sprinter exterior.png"/>
-            <div class="image-card-body">
-              <h3>Executive-Ready Comfort</h3>
-              <p>Ideal for teams, client hosting, and professional travel days.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- EVENTS -->
-    <section class="section section-alt" id="special-events">
-      <div class="container">
-        <div class="section-head">
-          <h2>Events & High-Demand Weekends</h2>
-          <p class="lead">
-            When traffic patterns change and parking becomes a problem, the value of planned transportation becomes obvious.
-            We coordinate staging, timing, and pickup strategy to keep your schedule clean.
-          </p>
-        </div>
-
-        <div class="card-grid">
-          <article class="image-card">
-            <img alt="Luxury SUV for event transportation" src="Photos/6-7 Passenger (SUV) suburban and yukon together.png"/>
-            <div class="image-card-body">
-              <h3>Executive & Private Events</h3>
-              <p>Arrive professionally and keep the exit plan organized.</p>
-            </div>
-          </article>
-
-          <article class="image-card">
-            <img alt="Limousine Sprinter for group events" src="Photos/Limousine Sprinter Exterior.png"/>
-            <div class="image-card-body">
-              <h3>Group Transportation</h3>
-              <p>Keep your group together with coordinated timing.</p>
-            </div>
-          </article>
-
-          <article class="image-card">
-            <img alt="Party bus for large groups" src="Photos/30-35 Passenger Party Bus exterior.png"/>
-            <div class="image-card-body">
-              <h3>Large Group Nights</h3>
-              <p>Capacity solutions with a planned pickup strategy.</p>
-            </div>
-          </article>
-
-          <article class="image-card">
-            <img alt="Coach transportation for large movements" src="Photos/56 Passenger Exterior.png"/>
-            <div class="image-card-body">
-              <h3>Executive / Coach Options</h3>
-              <p>For corporate groups, long-distance travel, and high-capacity transportation.</p>
-            </div>
-          </article>
-        </div>
-
-        <div class="cta-row center top-gap">
-          <a class="btn btn-primary" href="#booking">Request Event Transportation</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- LONG DISTANCE -->
-    <section class="section" id="long-distance">
-      <div class="container">
-        <div class="section-head">
-          <h2>Long-Distance Transportation</h2>
-          <p class="lead">
-            Chauffeur-driven trips across Texas and surrounding regions — ideal for itinerary-based travel when privacy and comfort matter.
-          </p>
-        </div>
-
-        <div class="two-col">
-          <div class="content">
-            <h3>Door-to-Door, Scheduled and Confirmed</h3>
-            <ul class="clean-list">
-              <li><i class="fa-solid fa-road"></i> Planned routing with stops as needed</li>
-              <li><i class="fa-solid fa-map-location-dot"></i> Regional travel coordinated in advance</li>
-              <li><i class="fa-solid fa-clock"></i> Timing based on your itinerary, not driver availability</li>
-            </ul>
-
-            <div class="cta-row">
-              <a class="btn btn-primary" href="#booking">Request Long-Distance Transportation</a>
-            </div>
-          </div>
-
-          <div class="image-card">
-            <img alt="Luxury SUV for long-distance chauffeur travel" src="Photos/6-7 Passenger (SUV) suburban and yukon together.png"/>
-            <div class="image-card-body">
-              <h3>Comfort for Longer Trips</h3>
-              <p>Ideal for business travelers, families, and itinerary-based plans.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- MOBILE NOTARY TEASER -->
-    <section class="section section-alt" id="mobile-notary">
-      <div class="container">
-        <div class="section-head">
-          <h2>Mobile Notary Services</h2>
-          <p class="lead">
-            Appointment-based mobile notary service delivered with chauffeur-level professionalism — discreet, punctual, and prepared.
-          </p>
-        </div>
-
-        <div class="two-col">
-          <div class="content">
-            <h3>Professional, Trust-Based Service</h3>
-            <p>
-              Mobile notary requests are handled by appointment, with a focus on confidentiality and proper conduct.
-              For the fastest service, use our dedicated notary request page.
-            </p>
-
-            <div class="cta-row">
-              <a class="btn btn-primary" href="notary.html">Request Mobile Notary Service</a>
-              <a class="btn btn-secondary" href="#booking">Request Chauffeur Service</a>
-            </div>
-          </div>
-
-          <div class="image-card">
-            <img alt="Professional standards and discretion" src="Photos/6-7 Passenger (SUV) suburban and yukon together.png"/>
-            <div class="image-card-body">
-              <h3>Discretion & Punctuality</h3>
-              <p>Appointment-based service, coordinated professionally.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FLEET -->
+    <!-- ── FLEET ── -->
     <section class="section" id="fleet">
       <div class="container">
-        <div class="section-head">
-          <h2>Fleet</h2>
-          <p class="lead">
-            Vehicle selection is based on group size, luggage needs, itinerary, and the type of event.
-          </p>
+        <div class="section-head reveal">
+          <span class="eyebrow">The Fleet</span>
+          <h2>Vehicles for Every Occasion</h2>
+          <div class="gold-rule"></div>
+          <p>From intimate airport transfers to large-group charters — every vehicle maintained to the highest standard.</p>
         </div>
 
-        <div class="card-grid">
-          <article class="image-card">
-            <img alt="Luxury SUV chauffeur service" src="Photos/6-7 Passenger (SUV) suburban and yukon together.png"/>
-            <div class="image-card-body">
+        <div class="fleet-grid">
+
+          <article class="fleet-card reveal">
+            <div class="fleet-img-wrap">
+              <img src="Photos/6-7 Passenger (SUV) suburban and yukon together.png" alt="Luxury SUV chauffeur service — Chevrolet Suburban and GMC Yukon" loading="lazy" width="600" height="450" />
+              <span class="fleet-badge">6–7 Passengers</span>
+            </div>
+            <div class="fleet-card-body">
               <h3>Luxury SUVs</h3>
-              <p>Best for airport transfers, executive travel, families, and luggage-heavy trips.</p>
+              <p>Suburban, Yukon XL — ideal for airport runs, executive travel, and families with luggage.</p>
+              <div class="fleet-cap"><i class="fas fa-user" aria-hidden="true"></i> Up to 7 passengers</div>
             </div>
           </article>
 
-          <article class="image-card">
-            <img alt="Stretch limousine transportation" src="Photos/10 pax lincoln sedan limo exterior.png"/>
-            <div class="image-card-body">
-              <h3>Limousines</h3>
-              <p>Classic transportation for weddings, formal events, and celebrations.</p>
+          <article class="fleet-card reveal reveal-delay-1">
+            <div class="fleet-img-wrap">
+              <img src="Photos/8 Passenger Lincoln MKT exterior.png" alt="8-passenger Lincoln MKT executive sedan" loading="lazy" width="600" height="450" />
+              <span class="fleet-badge">8 Passengers</span>
+            </div>
+            <div class="fleet-card-body">
+              <h3>Executive Sedans</h3>
+              <p>Lincoln MKT — refined comfort for corporate and point-to-point executive travel.</p>
+              <div class="fleet-cap"><i class="fas fa-user" aria-hidden="true"></i> Up to 8 passengers</div>
             </div>
           </article>
 
-          <article class="image-card">
-            <img alt="Executive Sprinter service" src="Photos/14 passenger executive Sprinter interior.png"/>
-            <div class="image-card-body">
-              <h3>Sprinters</h3>
-              <p>Ideal for small groups, corporate teams, and event transportation with extra space.</p>
+          <article class="fleet-card reveal reveal-delay-2">
+            <div class="fleet-img-wrap">
+              <img src="Photos/10 pax lincoln sedan limo exterior.png" alt="10-passenger Lincoln stretch limousine" loading="lazy" width="600" height="450" />
+              <span class="fleet-badge">10 Passengers</span>
+            </div>
+            <div class="fleet-card-body">
+              <h3>Stretch Limousines</h3>
+              <p>Lincoln Sedan Limo — classic elegance for weddings, proms, and formal occasions.</p>
+              <div class="fleet-cap"><i class="fas fa-user" aria-hidden="true"></i> Up to 10 passengers</div>
             </div>
           </article>
 
-          <article class="image-card">
-            <img alt="Party bus transportation" src="Photos/30-35 Pax Party Bus Interior.png"/>
-            <div class="image-card-body">
+          <article class="fleet-card reveal">
+            <div class="fleet-img-wrap">
+              <img src="Photos/18-pax-2024-cadillac-escalade.png" alt="18-passenger 2024 Cadillac Escalade limousine — new fleet" loading="lazy" width="600" height="450" />
+              <span class="fleet-badge" style="background:var(--gold);color:var(--black);">NEW FLEET</span>
+            </div>
+            <div class="fleet-card-body">
+              <h3>Cadillac Escalade Limo</h3>
+              <p>2024 Cadillac Escalade stretch — available in black and white. The crown jewel of the fleet.</p>
+              <div class="fleet-cap"><i class="fas fa-user" aria-hidden="true"></i> Up to 18 passengers</div>
+            </div>
+          </article>
+
+          <article class="fleet-card reveal reveal-delay-1">
+            <div class="fleet-img-wrap">
+              <img src="Photos/2025_limousine_sprinter_interior.jpg" alt="2025 Limousine Sprinter interior — executive group travel" loading="lazy" width="600" height="450" />
+              <span class="fleet-badge">13–14 Passengers</span>
+            </div>
+            <div class="fleet-card-body">
+              <h3>Executive Sprinters</h3>
+              <p>Limo Sprinter and Executive Sprinter — perfect for corporate groups and VIP events.</p>
+              <div class="fleet-cap"><i class="fas fa-user" aria-hidden="true"></i> Up to 14 passengers</div>
+            </div>
+          </article>
+
+          <article class="fleet-card reveal reveal-delay-2">
+            <div class="fleet-img-wrap">
+              <img src="Photos/20 Passenger Party bus interior.png" alt="20-passenger party bus interior" loading="lazy" width="600" height="450" />
+              <span class="fleet-badge">20–45 Passengers</span>
+            </div>
+            <div class="fleet-card-body">
               <h3>Party Buses</h3>
-              <p>Great for concerts, nightlife, celebrations, and group event nights.</p>
+              <p>20 to 45 passengers — LED lighting, premium sound, and full entertainment for nightlife and celebrations.</p>
+              <div class="fleet-cap"><i class="fas fa-user" aria-hidden="true"></i> Up to 45 passengers</div>
             </div>
           </article>
 
-          <article class="image-card">
-            <img alt="Executive and coach buses" src="Photos/56 passenger interior.png"/>
-            <div class="image-card-body">
-              <h3>Executive / Coach Buses</h3>
-              <p>For corporate groups, long-distance travel, and high-capacity transportation.</p>
+          <article class="fleet-card reveal">
+            <div class="fleet-img-wrap">
+              <img src="Photos/18 pax hummer limo wht exterior.png" alt="18-passenger white Hummer limousine exterior" loading="lazy" width="600" height="450" />
+              <span class="fleet-badge">18 Passengers</span>
+            </div>
+            <div class="fleet-card-body">
+              <h3>Hummer Limousines</h3>
+              <p>White LED Hummer Limo — statement transportation for bachelorette parties and milestone events.</p>
+              <div class="fleet-cap"><i class="fas fa-user" aria-hidden="true"></i> Up to 18 passengers</div>
             </div>
           </article>
 
-          <article class="image-card">
-            <img alt="Transit shuttle van" src="Photos/14 Passenger Transit Shuttle exterior.png"/>
-            <div class="image-card-body">
-              <h3>Shuttle / Transit Options</h3>
-              <p>Efficient group transfers when practicality and capacity matter.</p>
+          <article class="fleet-card reveal reveal-delay-1">
+            <div class="fleet-img-wrap">
+              <img src="Photos/25 Passenger minibus exterior.png" alt="25-passenger mini bus exterior" loading="lazy" width="600" height="450" />
+              <span class="fleet-badge">25–38 Passengers</span>
+            </div>
+            <div class="fleet-card-body">
+              <h3>Mini Buses</h3>
+              <p>25 to 38 passenger mini buses — ideal for corporate shuttles, venue transfers, and group outings.</p>
+              <div class="fleet-cap"><i class="fas fa-user" aria-hidden="true"></i> Up to 38 passengers</div>
             </div>
           </article>
+
+          <article class="fleet-card reveal reveal-delay-2">
+            <div class="fleet-img-wrap">
+              <img src="Photos/56 Passenger Exterior.png" alt="56-passenger full-size coach bus exterior" loading="lazy" width="600" height="450" />
+              <span class="fleet-badge">Up to 56 Passengers</span>
+            </div>
+            <div class="fleet-card-body">
+              <h3>Coach Buses</h3>
+              <p>Full-size coach buses with luggage storage — for large corporate groups and long-distance charter travel.</p>
+              <div class="fleet-cap"><i class="fas fa-user" aria-hidden="true"></i> Up to 56 passengers</div>
+            </div>
+          </article>
+
         </div>
 
-        <div class="cta-row center top-gap">
-          <a class="btn btn-primary" href="#booking">Request a Fleet Recommendation</a>
+        <div class="cta-row center" style="margin-top:3rem;">
+          <a href="#booking" class="btn btn-primary">Request a Fleet Recommendation</a>
+          <a href="tel:+18179696868" class="btn btn-secondary">Call to Discuss Options</a>
         </div>
       </div>
     </section>
 
-    <!-- BOOKING -->
-    <section class="section section-alt" id="booking">
+    <!-- ── TESTIMONIALS ── -->
+    <section class="section testimonials" id="testimonials">
       <div class="container">
-        <div class="section-head">
-          <h2>Request Chauffeur Service</h2>
-          <p class="lead">
-            Submit your request below and we’ll confirm availability, vehicle selection, and scheduling details.
-            All services are appointment-based and coordinated in advance.
-          </p>
+        <div class="section-head reveal" style="text-align:center;">
+          <span class="eyebrow">Client Reviews</span>
+          <h2>What Clients Say</h2>
+          <div class="gold-rule center"></div>
         </div>
 
-        <div class="embed-wrap">
-          <div id='bro_reservation'></div>
-          <input type='hidden' id='cid' value='AZeGyy3Ackdljq3JkvMgOQ%3d%3d' />
-          <input type='hidden' id='dbaid' value='luhMn%2bNNZqJoV6nB7ay3LA%3d%3d' />
-          <script type='text/javascript'>
-            (function () {
-              var po = document.createElement('script');
-              po.type = 'text/javascript';
-              po.async = true;
-              po.src = 'https://bookridesonline.com/web/reservation.js';
-              var s = document.getElementsByTagName('script')[0];
-              s.parentNode.insertBefore(po, s);
-            })();
-          </script>
+        <div class="testi-grid">
 
-          <p class="embed-note">
-            <strong>Alternative Booking Option:</strong>
-            If you prefer, or if you experience difficulty submitting the form, you may complete your reservation directly using this secure link:
-            <a href="https://bookridesonline.com/book/?dbaid=luhMn%2bNNZqJoV6nB7ay3LA%3d%3d" target="_blank" rel="noopener">Secure Online Booking</a>
-          </p>
+          <div class="testi-card reveal">
+            <div class="testi-stars" aria-label="5 out of 5 stars">
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+            </div>
+            <p class="testi-quote">"Chris is a true professional and very attentive to his clients needs. His vehicle was clean and had refreshments, phone chargers, and privacy. He arrived on time dressed like the professional he proved he is. His vast experience in the transportation industry really shows. We never felt rushed."</p>
+            <div class="testi-author">
+              <div class="testi-avatar" aria-hidden="true">C</div>
+              <div>
+                <div class="testi-name">Clayton H.</div>
+                <div class="testi-source">Concert Transportation</div>
+              </div>
+              <span class="testi-platform">Thumbtack</span>
+            </div>
+          </div>
+
+          <div class="testi-card reveal reveal-delay-1">
+            <div class="testi-stars" aria-label="5 out of 5 stars">
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+            </div>
+            <p class="testi-quote">"Highly recommend Agency Chauffeur for any transportation need. Professional, punctual, and the experience was genuinely first class from start to finish. He graciously extended our time with no issue. This is what real chauffeur service looks like."</p>
+            <div class="testi-author">
+              <div class="testi-avatar" aria-hidden="true">M</div>
+              <div>
+                <div class="testi-name">Michelle R.</div>
+                <div class="testi-source">Special Event</div>
+              </div>
+              <span class="testi-platform">Thumbtack</span>
+            </div>
+          </div>
+
+          <div class="testi-card reveal reveal-delay-2">
+            <div class="testi-stars" aria-label="5 out of 5 stars">
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+            </div>
+            <p class="testi-quote">"Even let us plug our phones into his CarPlay so we could jam to our music both to and from the concert. Safe driver, clean vehicle, on time. Exactly what you want when you're trusting someone to handle your evening. Will absolutely book again."</p>
+            <div class="testi-author">
+              <div class="testi-avatar" aria-hidden="true">J</div>
+              <div>
+                <div class="testi-name">James T.</div>
+                <div class="testi-source">Corporate Client</div>
+              </div>
+              <span class="testi-platform">Thumbtack</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── VENUES ── -->
+    <section class="section section-dark" id="venues">
+      <div class="container">
+        <div class="section-head reveal" style="text-align:center;">
+          <span class="eyebrow">Where We Go</span>
+          <h2>Serving All of DFW</h2>
+          <div class="gold-rule center"></div>
+          <p style="margin:0 auto;">From stadiums and entertainment venues to airports, casinos, and corporate campuses across the entire Metroplex.</p>
         </div>
 
-        <div class="cta-row center top-gap">
-          <a class="btn btn-secondary" href="notary.html">Mobile Notary Page</a>
+        <div class="venue-strip">
+          <div class="venue-item reveal">
+            <img src="Photos/AT&amp;T Stadum arial.png" alt="AT&T Stadium aerial view — Arlington" loading="lazy" />
+            <div class="venue-label">AT&amp;T Stadium</div>
+          </div>
+          <div class="venue-item reveal reveal-delay-1">
+            <img src="Photos/AMERICAN AIRLINES CENTER Exterior arial.png" alt="American Airlines Center exterior" loading="lazy" />
+            <div class="venue-label">American Airlines Center</div>
+          </div>
+          <div class="venue-item reveal reveal-delay-2">
+            <img src="Photos/Globe Life Field - with Bus &amp; Limo.png" alt="Globe Life Field with bus and limousine" loading="lazy" />
+            <div class="venue-label">Globe Life Field</div>
+          </div>
+          <div class="venue-item reveal reveal-delay-3">
+            <img src="Photos/THE STAR FRISCO arial.png" alt="The Star in Frisco aerial view" loading="lazy" />
+            <div class="venue-label">The Star, Frisco</div>
+          </div>
+          <div class="venue-item reveal reveal-delay-4">
+            <img src="Photos/DFW Airport Entrance.png" alt="DFW Airport entrance" loading="lazy" />
+            <div class="venue-label">DFW Airport</div>
+          </div>
+          <div class="venue-item reveal">
+            <img src="Photos/BILLY BOBS TEXAS exterior.png" alt="Billy Bob's Texas exterior" loading="lazy" />
+            <div class="venue-label">Billy Bob's Texas</div>
+          </div>
+          <div class="venue-item reveal reveal-delay-1">
+            <img src="Photos/DICKIES ARENA arial.png" alt="Dickies Arena aerial view" loading="lazy" />
+            <div class="venue-label">Dickies Arena</div>
+          </div>
+          <div class="venue-item reveal reveal-delay-2">
+            <img src="Photos/DOS EQUIS PAVILION arial.png" alt="Dos Equis Pavilion" loading="lazy" />
+            <div class="venue-label">Dos Equis Pavilion</div>
+          </div>
+          <div class="venue-item reveal reveal-delay-3">
+            <img src="Photos/winstar world casino.png" alt="WinStar World Casino" loading="lazy" />
+            <div class="venue-label">WinStar Casino</div>
+          </div>
+          <div class="venue-item reveal reveal-delay-4">
+            <img src="Photos/dallas-love-field-entrance.png" alt="Dallas Love Field entrance" loading="lazy" />
+            <div class="venue-label">Dallas Love Field</div>
+          </div>
+        </div>
+
+        <!-- Coverage Cities -->
+        <div style="margin-top:3rem;">
+          <div class="section-head reveal" style="text-align:center; margin-bottom:1.5rem;">
+            <span class="eyebrow">Coverage Area</span>
+            <h3 style="font-size:1.4rem;">Throughout the DFW Metroplex &amp; Beyond</h3>
+          </div>
+          <div class="coverage-grid">
+            <div class="coverage-item reveal"><i class="fas fa-map-marker-alt" aria-hidden="true"></i><span>Fort Worth</span></div>
+            <div class="coverage-item reveal reveal-delay-1"><i class="fas fa-map-marker-alt" aria-hidden="true"></i><span>Dallas</span></div>
+            <div class="coverage-item reveal reveal-delay-2"><i class="fas fa-map-marker-alt" aria-hidden="true"></i><span>Arlington</span></div>
+            <div class="coverage-item reveal reveal-delay-3"><i class="fas fa-map-marker-alt" aria-hidden="true"></i><span>Frisco</span></div>
+            <div class="coverage-item reveal"><i class="fas fa-map-marker-alt" aria-hidden="true"></i><span>Plano</span></div>
+            <div class="coverage-item reveal reveal-delay-1"><i class="fas fa-map-marker-alt" aria-hidden="true"></i><span>Irving</span></div>
+            <div class="coverage-item reveal reveal-delay-2"><i class="fas fa-map-marker-alt" aria-hidden="true"></i><span>Grapevine</span></div>
+            <div class="coverage-item reveal reveal-delay-3"><i class="fas fa-map-marker-alt" aria-hidden="true"></i><span>Southlake</span></div>
+            <div class="coverage-item reveal"><i class="fas fa-map-marker-alt" aria-hidden="true"></i><span>Denton</span></div>
+            <div class="coverage-item reveal reveal-delay-1"><i class="fas fa-map-marker-alt" aria-hidden="true"></i><span>McKinney</span></div>
+            <div class="coverage-item reveal reveal-delay-2"><i class="fas fa-map-marker-alt" aria-hidden="true"></i><span>Granbury</span></div>
+            <div class="coverage-item reveal reveal-delay-3"><i class="fas fa-map-marker-alt" aria-hidden="true"></i><span>Rockwall</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FAQ ── -->
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-head reveal" style="text-align:center;">
+          <span class="eyebrow">Common Questions</span>
+          <h2>Frequently Asked Questions</h2>
+          <div class="gold-rule center"></div>
+        </div>
+
+        <div class="faq-list reveal">
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" type="button">
+              What areas does Agency Chauffeur serve?
+              <i class="fas fa-plus faq-icon" aria-hidden="true"></i>
+            </button>
+            <div class="faq-answer">
+              <p>We serve the entire Dallas–Fort Worth Metroplex including Dallas, Fort Worth, Arlington, Frisco, Plano, Irving, Grapevine, Southlake, Denton, McKinney, Rockwall, Granbury, and all surrounding communities. Long-distance travel throughout Texas and beyond is also available — just ask.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" type="button">
+              How do I book a chauffeur?
+              <i class="fas fa-plus faq-icon" aria-hidden="true"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Use the secure online booking form on this page, or call us directly at 817-969-6868. All services are appointment-based and confirmed in advance — you'll always know exactly who's coming, when, and in what vehicle.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" type="button">
+              Do you monitor flights for airport pickups?
+              <i class="fas fa-plus faq-icon" aria-hidden="true"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Yes. For airport transfers, we monitor your flight in real time and adjust accordingly. We account for early arrivals, delays, and gate changes — you won't be left waiting or rushed. Meet-and-greet service is available on request.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" type="button">
+              What vehicles are available and how many can they hold?
+              <i class="fas fa-plus faq-icon" aria-hidden="true"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Our fleet covers groups from 1 to 56 passengers. Vehicles include luxury SUVs (6–7 pax), executive sedans (up to 8 pax), stretch limousines (10 pax), Cadillac Escalade limos (18 pax — new fleet), Hummer limos (18 pax), Executive Sprinters (13–14 pax), party buses (20–45 pax), mini buses (25–38 pax), and full coach buses (up to 56 pax).</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" type="button">
+              Is there a minimum booking time or deposit required?
+              <i class="fas fa-plus faq-icon" aria-hidden="true"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Minimum hours and deposit requirements vary by vehicle and event type. These details are confirmed at the time of booking. We'll walk you through everything clearly before any commitment is made.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" type="button">
+              Do you offer a mobile notary service?
+              <i class="fas fa-plus faq-icon" aria-hidden="true"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Yes. Agency Chauffeur Private Drivers also offers appointment-based mobile notary service — delivered with the same professionalism and punctuality our transportation clients expect. <a href="notary.html" style="color:var(--gold);">Visit our Mobile Notary page</a> to learn more and submit a request.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── BOOKING ── -->
+    <section class="section section-dark" id="booking">
+      <div class="container">
+        <div class="section-head reveal" style="text-align:center;">
+          <span class="eyebrow">Reserve Your Ride</span>
+          <h2>Book a Chauffeur</h2>
+          <div class="gold-rule center"></div>
+          <p style="margin:0 auto;">Complete your reservation securely below. All bookings are appointment-confirmed — you'll receive confirmation of vehicle, timing, and driver details.</p>
+        </div>
+
+        <div class="booking-wrap reveal">
+          <div class="booking-header">
+            <h3><i class="fas fa-lock" aria-hidden="true"></i> Secure Online Booking</h3>
+            <a href="tel:+18179696868" class="btn btn-ghost">
+              <i class="fas fa-phone" aria-hidden="true"></i> Prefer to call? 817-969-6868
+            </a>
+          </div>
+
+          <iframe
+            src="https://bookridesonline.com/book/?dbaid=luhMn%2bNNZqJoV6nB7ay3LA%3d%3d"
+            class="booking-iframe"
+            title="Agency Chauffeur Online Booking"
+            loading="lazy"
+            scrolling="yes"
+            allow="payment"
+          ></iframe>
+
+          <div class="booking-footer">
+            Having trouble with the form?
+            <a href="https://bookridesonline.com/book/?dbaid=luhMn%2bNNZqJoV6nB7ay3LA%3d%3d" target="_blank" rel="noopener noreferrer">
+              Open booking in a new tab
+            </a>
+            &nbsp;or call us at&nbsp;
+            <a href="tel:+18179696868">817-969-6868</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── NOTARY TEASER ── -->
+    <section class="notary-teaser" id="notary">
+      <div class="notary-teaser-inner">
+        <div class="notary-img">
+          <img src="Photos/Notary.png" alt="Professional mobile notary service" loading="lazy" width="700" height="420" />
+        </div>
+        <div class="notary-content reveal">
+          <span class="eyebrow">Additional Services</span>
+          <h2>Mobile Notary Service</h2>
+          <div class="gold-rule"></div>
+          <p>
+            Appointment-based mobile notary service — delivered to your location with professional presentation, punctual arrival, and full discretion. The same standards that define our chauffeur work.
+          </p>
+          <ul class="clean-list" role="list" style="margin-bottom:1.75rem;">
+            <li>Appointment-based scheduling, confirmed in advance</li>
+            <li>Professional attire and organized documentation</li>
+            <li>Discreet, reliable service at your location</li>
+          </ul>
+          <div class="cta-row">
+            <a href="notary.html" class="btn btn-primary">Request Mobile Notary</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CTA BAND ── -->
+    <section class="cta-band">
+      <div class="container reveal">
+        <span class="eyebrow">Ready to Ride?</span>
+        <h2>Experience the Difference</h2>
+        <p>Professional chauffeur service done the right way. No rideshare gimmicks — just proper, appointment-based transportation with over 20 years behind the wheel.</p>
+        <div class="cta-row center">
+          <a href="#booking" class="btn btn-primary">
+            <i class="fas fa-calendar-check" aria-hidden="true"></i> Book a Ride
+          </a>
+          <a href="tel:+18179696868" class="btn btn-secondary">
+            <i class="fas fa-phone" aria-hidden="true"></i> 817-969-6868
+          </a>
         </div>
       </div>
     </section>
 
   </main>
 
-  <!-- FOOTER -->
-  <footer class="site-footer">
+  <!-- ── FOOTER ── -->
+  <footer class="site-footer" role="contentinfo">
     <div class="container footer-grid">
 
       <div class="footer-col">
         <div class="footer-brand">
-          <img src="Photos/Logo.png" alt="Agency Chauffeur Private Drivers" class="footer-logo"/>
+          <img src="Photos/Logo.png" alt="Agency Chauffeur Private Drivers" class="footer-logo" loading="lazy" width="48" height="48" />
           <div>
-            <div class="footer-title">Agency Chauffeur Private Drivers</div>
-            <div class="footer-sub">Professional Chauffeurs • DFW</div>
+            <div class="footer-title">Agency Chauffeur<br>Private Drivers</div>
+            <div class="footer-sub">Professional Chauffeurs · DFW</div>
           </div>
         </div>
-        <p class="top-gap">
-          Appointment-based chauffeur transportation delivered with discretion, punctuality, and proper conduct.
+        <p class="footer-desc">
+          Appointment-based chauffeur transportation delivered with 20+ years of experience, discretion, and proper conduct across the Dallas–Fort Worth Metroplex.
         </p>
       </div>
 
       <div class="footer-col">
         <h4>Services</h4>
         <ul>
-          <li><a href="#airport-transfers">Airport Transfers</a></li>
-          <li><a href="#corporate-transportation">Corporate</a></li>
-          <li><a href="#special-events">Events</a></li>
-          <li><a href="#long-distance">Long-Distance</a></li>
-          <li><a href="#fleet">Fleet</a></li>
+          <li><a href="#airport"><i class="fas fa-plane fa-fw" aria-hidden="true"></i> Airport Transfers</a></li>
+          <li><a href="#corporate"><i class="fas fa-briefcase fa-fw" aria-hidden="true"></i> Corporate Travel</a></li>
+          <li><a href="#events"><i class="fas fa-rings-wedding fa-fw" aria-hidden="true"></i> Weddings &amp; Events</a></li>
+          <li><a href="#long-distance"><i class="fas fa-route fa-fw" aria-hidden="true"></i> Long-Distance</a></li>
+          <li><a href="#fleet"><i class="fas fa-car fa-fw" aria-hidden="true"></i> Fleet</a></li>
+          <li><a href="notary.html"><i class="fas fa-file-signature fa-fw" aria-hidden="true"></i> Mobile Notary</a></li>
         </ul>
       </div>
 
       <div class="footer-col">
-        <h4>More</h4>
+        <h4>Navigate</h4>
         <ul>
-          <li><a href="#booking">Request Service</a></li>
-          <li><a href="notary.html">Mobile Notary</a></li>
-          <li><a href="#top">Back to Top</a></li>
+          <li><a href="#top">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#fleet">Fleet</a></li>
+          <li><a href="#testimonials">Reviews</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#booking">Book a Ride</a></li>
         </ul>
       </div>
 
       <div class="footer-col">
         <h4>Contact</h4>
-        <ul>
-          <li><a href="tel:+18179696868">817-969-6868</a></li>
-          <li><a href="mailto:info@agency-limo.com">info@agency-limo.com</a></li>
-          <li><a href="#booking">Request Service</a></li>
-        </ul>
+        <address style="font-style:normal;">
+          <a href="tel:+18179696868" class="footer-contact-item">
+            <i class="fas fa-phone" aria-hidden="true"></i>
+            817-969-6868
+          </a>
+          <a href="mailto:info@agency-limo.com" class="footer-contact-item">
+            <i class="fas fa-envelope" aria-hidden="true"></i>
+            info@agency-limo.com
+          </a>
+          <div class="footer-contact-item">
+            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+            Fort Worth, TX<br>Dallas–Fort Worth Metroplex
+          </div>
+        </address>
       </div>
 
     </div>
 
     <div class="container footer-bottom">
       <p>© <span class="current-year"></span> Agency Chauffeur Private Drivers. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="sitemap.xml">Sitemap</a>
+      </div>
     </div>
   </footer>
 
 </div><!-- /.site-frame -->
 
-<!-- IMPORTANT: all behavior now comes from script.js -->
+<!-- ── MOBILE STICKY CTA ── -->
+<div class="mobile-sticky-cta" aria-hidden="true">
+  <a href="tel:+18179696868" class="btn btn-secondary" style="flex:1; justify-content:center; font-size:0.75rem; padding:0.75rem 0.5rem;">
+    <i class="fas fa-phone" aria-hidden="true"></i> Call
+  </a>
+  <a href="#booking" class="btn btn-primary" style="flex:2; justify-content:center; font-size:0.75rem; padding:0.75rem 0.5rem;">
+    <i class="fas fa-calendar-check" aria-hidden="true"></i> Book a Ride
+  </a>
+</div>
+
+<script>
+  // Year
+  document.querySelectorAll('.current-year').forEach(el => el.textContent = new Date().getFullYear());
+
+  // ── Header scroll class ──
+  const header = document.getElementById('mainHeader');
+  const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 40);
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  // ── Hero Slider ──
+  (function() {
+    const slides = document.querySelectorAll('.hero-slide');
+    const dotsContainer = document.getElementById('heroDots');
+    let current = 0;
+    let interval;
+
+    if (!slides.length) return;
+
+    // Create dots
+    slides.forEach((_, i) => {
+      const dot = document.createElement('button');
+      dot.className = 'hero-dot' + (i === 0 ? ' active' : '');
+      dot.setAttribute('aria-label', 'Go to slide ' + (i + 1));
+      dot.setAttribute('role', 'tab');
+      dot.addEventListener('click', () => { goTo(i); resetInterval(); });
+      dotsContainer.appendChild(dot);
+    });
+
+    function goTo(n) {
+      slides[current].classList.remove('active');
+      dotsContainer.children[current].classList.remove('active');
+      current = (n + slides.length) % slides.length;
+      slides[current].classList.add('active');
+      dotsContainer.children[current].classList.add('active');
+    }
+
+    function next() { goTo(current + 1); }
+
+    function resetInterval() {
+      clearInterval(interval);
+      interval = setInterval(next, 5500);
+    }
+
+    resetInterval();
+  })();
+
+  // ── FAQ Accordion ──
+  document.querySelectorAll('.faq-question').forEach(btn => {
+    btn.addEventListener('click', function() {
+      const item = this.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+
+      document.querySelectorAll('.faq-item.open').forEach(el => {
+        el.classList.remove('open');
+        el.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+      });
+
+      if (!isOpen) {
+        item.classList.add('open');
+        this.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+
+  // ── Scroll Reveal ──
+  const revealObs = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); revealObs.unobserve(e.target); } });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
+
+</script>
+
 <script src="script.js"></script>
 
 </body>
