@@ -559,12 +559,16 @@ body.no-scroll { overflow: hidden; }
     height: calc(100vh - env(safe-area-inset-bottom, 0px));
     height: calc(100svh - env(safe-area-inset-bottom, 0px));
     min-height: 520px;
-    /* Push content up slightly so CTA stays visible above mobile browser chrome */
     align-items: flex-start;
     padding-top: calc(var(--header-h) + 2rem);
   }
   .hero-content {
     padding-top: 0 !important;
+  }
+  /* Notary hero overrides — auto height, enough bottom padding for CTA */
+  #notary-home {
+    height: auto !important;
+    padding-bottom: 3rem;
   }
 }
 
@@ -643,6 +647,24 @@ body.no-scroll { overflow: hidden; }
   flex-wrap: wrap;
   gap: 0.6rem;
   margin-top: 2.5rem;
+}
+
+@media (max-width: 900px) {
+  .hero-pills {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: visible;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding-bottom: 0.25rem;
+    /* Extend slightly past container edges */
+    margin-left: -1rem;
+    margin-right: -1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .hero-pills::-webkit-scrollbar { display: none; }
+  .hero-pill { flex-shrink: 0; }
 }
 
 .hero-pill {
@@ -1676,6 +1698,9 @@ body.no-scroll { overflow: hidden; }
   font-size: 0.78rem;
   color: var(--muted);
   letter-spacing: 0.08em;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 .breadcrumb a { transition: color 0.2s; }
 .breadcrumb a:hover { color: var(--gold); }
