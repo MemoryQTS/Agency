@@ -3,229 +3,423 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
   <title>Mobile Notary | Agency Chauffeur Private Drivers</title>
-  <meta name="description" content="Mobile Notary service by Agency Chauffeur Private Drivers. Appointment-based notary visits delivered with professional presentation, punctuality, and discretion." />
+  <meta name="description" content="Mobile notary service by Agency Chauffeur Private Drivers — appointment-based, professional, and discreet. Serving the Dallas–Fort Worth Metroplex. Call 817-969-6868." />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#080d14" />
 
+  <link rel="canonical" href="https://agency-nine-pied.vercel.app/notary.html" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="Photos/Logo.png" />
+  <link rel="apple-touch-icon" href="Photos/Logo.png" />
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content="Mobile Notary | Agency Chauffeur Private Drivers" />
+  <meta property="og:description" content="Appointment-based mobile notary service delivered with professional standards across DFW." />
+  <meta property="og:url"         content="https://agency-nine-pied.vercel.app/notary.html" />
+  <meta property="og:image"       content="https://agency-nine-pied.vercel.app/Photos/Notary.png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+
+  <!-- Styles -->
   <link rel="stylesheet" href="style.css" />
+
+  <!-- Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": ["LocalBusiness", "NotaryService"],
+        "@id": "https://agency-nine-pied.vercel.app/notary.html#notary",
+        "name": "Agency Chauffeur Private Drivers — Mobile Notary",
+        "description": "Appointment-based mobile notary service delivered with professional presentation, punctuality, and discretion across the Dallas–Fort Worth Metroplex.",
+        "url": "https://agency-nine-pied.vercel.app/notary.html",
+        "telephone": "+18179696868",
+        "email": "info@agency-limo.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Fort Worth",
+          "addressRegion": "TX",
+          "addressCountry": "US"
+        },
+        "areaServed": {"@type": "AdministrativeArea", "name": "Dallas–Fort Worth Metroplex"},
+        "serviceType": "Mobile Notary"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://agency-nine-pied.vercel.app/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Mobile Notary",
+            "item": "https://agency-nine-pied.vercel.app/notary.html"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 
 <body>
 
-<a class="skip-link" href="#main">Skip to content</a>
+<a class="skip-link" href="#main">Skip to main content</a>
 
-<!-- MOBILE OVERLAY + DRAWER -->
-<div id="mobileOverlay" class="mobile-overlay" aria-hidden="true"></div>
+<!-- ── MOBILE OVERLAY + DRAWER ── -->
+<div id="mobileMenuOverlay" class="mobile-overlay" aria-hidden="true"></div>
 
-<aside id="mobileNav" class="mobile-nav" aria-hidden="true">
+<nav id="mobileNav" class="mobile-nav" aria-label="Mobile navigation" aria-hidden="true">
   <div class="mobile-nav-head">
-    <div class="mobile-brand">Menu</div>
-    <button id="mobileClose" class="mobile-close" aria-label="Close menu">✕</button>
+    <span class="mobile-brand">Menu</span>
+    <button id="mobileMenuClose" class="mobile-close" aria-label="Close menu" type="button">
+      <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+    </button>
   </div>
-
   <ul class="mobile-nav-links">
-    <li><a href="index.html#home">Home</a></li>
-
-    <li>
-      <button id="mobileServicesToggle" class="mobile-dropdown-toggle" aria-expanded="false" type="button">
-        Services <span>▾</span>
+    <li><a href="index.html#top">Home</a></li>
+    <li class="mobile-dropdown">
+      <button class="mobile-dropdown-toggle" aria-expanded="false" type="button">
+        Services <i class="fas fa-chevron-down" aria-hidden="true"></i>
       </button>
-      <ul id="mobileServicesMenu" class="mobile-dropdown-menu">
-        <li><a href="index.html#services">Chauffeur Services</a></li>
+      <ul class="mobile-dropdown-menu">
         <li><a href="index.html#airport">Airport Transfers</a></li>
-        <li><a href="index.html#corporate">Corporate Travel</a></li>
-        <li><a href="index.html#events">Events & Groups</a></li>
+        <li><a href="index.html#corporate">Corporate &amp; Executive</a></li>
+        <li><a href="index.html#events">Weddings &amp; Events</a></li>
         <li><a href="index.html#fleet">Fleet</a></li>
       </ul>
     </li>
-
-    <li><a href="notary.html">Mobile Notary</a></li>
+    <li><a href="index.html#fleet">Fleet</a></li>
+    <li><a href="notary.html" aria-current="page">Mobile Notary</a></li>
     <li><a href="#request-notary">Request Notary</a></li>
+    <li><a href="index.html#booking">Request Chauffeur</a></li>
   </ul>
-
   <div class="mobile-cta">
+    <a href="tel:+18179696868" class="btn btn-ghost btn-block" style="margin-bottom:0.6rem;">
+      <i class="fas fa-phone" aria-hidden="true"></i> 817-969-6868
+    </a>
     <a href="#request-notary" class="btn btn-primary btn-block">Request Notary</a>
   </div>
-</aside>
+</nav>
 
-<!-- SITE FRAME -->
+<!-- ── SITE FRAME ── -->
 <div class="site-frame">
 
-  <!-- HEADER -->
-  <header class="main-header">
+  <!-- ── HEADER ── -->
+  <header class="main-header" id="mainHeader">
     <div class="container header-inner">
-      <a href="index.html#home" class="brand">
-        <img src="Photos/Logo.png" alt="Agency Chauffeur Private Drivers Logo" class="brand-logo" />
-        <span class="brand-text">Agency Chauffeur Private Drivers</span>
+
+      <a href="index.html" class="brand" aria-label="Agency Chauffeur Private Drivers — home">
+        <img src="Photos/Logo.png" alt="Agency Chauffeur Private Drivers logo" class="brand-logo" width="44" height="44" />
+        <span class="brand-text">
+          Agency Chauffeur
+          <span class="sub">Private Drivers</span>
+        </span>
       </a>
 
-      <nav class="desktop-nav">
-        <ul class="main-nav">
-          <li><a href="index.html#home">Home</a></li>
+      <button id="mobileMenuToggle" class="mobile-toggle" aria-expanded="false" aria-controls="mobileNav" aria-label="Open navigation menu">
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+      </button>
 
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <ul class="main-nav">
+          <li><a href="index.html#top">Home</a></li>
           <li class="dropdown">
-            <button type="button">Services ▾</button>
-            <ul class="dropdown-menu">
-              <li><a href="index.html#services">Chauffeur Services</a></li>
+            <button class="dropdown-toggle" type="button" aria-expanded="false" aria-haspopup="true">
+              Services <i class="fas fa-chevron-down" aria-hidden="true" style="font-size:0.65rem;"></i>
+            </button>
+            <ul class="dropdown-menu" aria-label="Services menu">
+              <li class="dropdown-label">Transportation</li>
               <li><a href="index.html#airport">Airport Transfers</a></li>
-              <li><a href="index.html#corporate">Corporate Travel</a></li>
-              <li><a href="index.html#events">Events & Groups</a></li>
+              <li><a href="index.html#corporate">Corporate &amp; Executive</a></li>
+              <li><a href="index.html#events">Weddings &amp; Events</a></li>
               <li><a href="index.html#fleet">Fleet</a></li>
             </ul>
           </li>
-
-          <li><a href="notary.html">Mobile Notary</a></li>
-
-          <li class="nav-cta">
-            <a href="index.html#request" class="btn btn-primary">Request Service</a>
+          <li><a href="index.html#fleet">Fleet</a></li>
+          <li><a href="notary.html" aria-current="page">Mobile Notary</a></li>
+          <li class="nav-phone">
+            <a href="tel:+18179696868">
+              <i class="fas fa-phone" aria-hidden="true"></i> 817-969-6868
+            </a>
+          </li>
+          <li class="nav-book">
+            <a href="#request-notary">Request Notary</a>
           </li>
         </ul>
       </nav>
 
-      <button id="mobileToggle" class="mobile-toggle" aria-expanded="false" aria-label="Open menu">☰</button>
     </div>
   </header>
 
-  <!-- MAIN -->
+  <!-- ── MAIN ── -->
   <main id="main">
 
-    <!-- HERO -->
-    <section id="notary-home" class="hero">
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+      <div class="container">
+        <ol class="breadcrumb" role="list">
+          <li><a href="index.html">Home</a></li>
+          <li class="breadcrumb-sep" aria-hidden="true"><i class="fas fa-chevron-right" style="font-size:0.6rem;"></i></li>
+          <li><span aria-current="page">Mobile Notary</span></li>
+        </ol>
+      </div>
+    </nav>
+
+    <!-- ── HERO ── -->
+    <section class="hero" id="notary-home" style="min-height: 60svh; height: 60svh;" aria-label="Mobile Notary hero">
       <div class="hero-slider">
-        <div class="hero-slide active" style="background-image:url('Photos/notary-hero.jpg');"></div>
+        <div class="hero-slide active" style="background-image:url('Photos/Business executive working inside vehicle.png')"></div>
         <div class="hero-overlay"></div>
-
-        <div class="hero-content">
-          <h1>Mobile Notary — Professional, Discreet, Appointment-Based</h1>
-
-          <p class="hero-subtitle">
-            Agency Chauffeur Private Drivers offers mobile notary service with the same standards that define our chauffeur work: punctual arrival, professional presentation, and careful attention to documentation requirements.
-          </p>
-
-          <div class="hero-cta">
-            <a href="#request-notary" class="btn btn-primary">Request Notary</a>
-            <a href="index.html#request" class="btn btn-secondary">Request Chauffeur Service</a>
-          </div>
-
-          <div class="trust-inline">
-            <span class="trust-pill">Appointment-Based Scheduling</span>
-            <span class="trust-pill">Professional Presentation</span>
-            <span class="trust-pill">Discreet & Reliable</span>
-          </div>
+      </div>
+      <img src="Photos/Logo.png" class="hero-watermark" alt="" aria-hidden="true" />
+      <div class="container hero-content" style="padding-top:0;">
+        <span class="eyebrow">Additional Services</span>
+        <h1>Mobile Notary —<br><em>Professional &amp; Discreet.</em></h1>
+        <p class="hero-subtitle">
+          Appointment-based mobile notary service delivered with the same professionalism, punctuality, and discretion that defines our chauffeur work.
+        </p>
+        <div class="cta-row">
+          <a href="#request-notary" class="btn btn-primary">
+            <i class="fas fa-file-signature" aria-hidden="true"></i> Request Notary
+          </a>
+          <a href="index.html#booking" class="btn btn-secondary">Request Chauffeur Service</a>
+        </div>
+        <div class="hero-pills" role="list">
+          <span class="hero-pill" role="listitem">Appointment-Based</span>
+          <span class="hero-pill" role="listitem">Professional Presentation</span>
+          <span class="hero-pill" role="listitem">Discreet &amp; Reliable</span>
+          <span class="hero-pill" role="listitem">DFW Metroplex</span>
         </div>
       </div>
     </section>
 
-    <!-- ABOUT NOTARY -->
-    <section class="section">
+    <!-- ── ABOUT NOTARY ── -->
+    <section class="section" id="notary-about">
       <div class="container two-col">
-        <div class="content">
-          <h2>Mobile Notary Service With Professional Standards</h2>
+        <div class="about-img-wrap reveal">
+          <img
+            src="Photos/Notary.png"
+            alt="Professional mobile notary service documentation"
+            class="about-img"
+            loading="lazy"
+            width="600"
+            height="750"
+          />
+        </div>
+        <div class="about-content reveal reveal-delay-1">
+          <span class="eyebrow">Mobile Notary Service</span>
+          <h2>When Documents Matter, the Process Should Be Calm.</h2>
+          <div class="gold-rule"></div>
           <p>
-            When documents matter, the process should be calm, organized, and handled with care. Our mobile notary service is structured around appointment-based scheduling and a professional arrival — consistent with the private-driver standards our clients expect.
+            Agency Chauffeur Private Drivers offers mobile notary service structured around appointment-based scheduling and a professional arrival — consistent with the private-driver standards our clients expect.
           </p>
           <p>
-            Submit your request using the form below. We will review your details and confirm availability and appointment timing.
+            Submit your request using the form below. We will review your details and confirm availability and appointment timing before the visit.
           </p>
-
-          <ul class="clean-list">
-            <li>Appointment-based mobile notary visits</li>
+          <ul class="clean-list" role="list">
+            <li>Appointment-based mobile notary visits at your location</li>
             <li>Professional presentation and punctual arrival</li>
             <li>Clear communication and confirmation before the visit</li>
+            <li>Discreet, organized, and thorough documentation</li>
           </ul>
-
           <div class="cta-row">
             <a href="#request-notary" class="btn btn-primary">Request Notary</a>
-            <a href="index.html" class="btn btn-tertiary">Back to Chauffeur Services</a>
+            <a href="index.html" class="btn btn-secondary">Back to Chauffeur Services</a>
           </div>
-        </div>
-
-        <div class="image-card">
-          <img src="Photos/Notary.png" alt="Mobile Notary Appointment" />
         </div>
       </div>
     </section>
 
-    <!-- WHAT TO EXPECT -->
-    <section class="section section-alt">
+    <!-- ── WHAT TO EXPECT ── -->
+    <section class="section section-dark" id="notary-process">
       <div class="container">
-        <div class="section-head">
+        <div class="section-head reveal" style="text-align:center;">
+          <span class="eyebrow">The Process</span>
           <h2>What to Expect</h2>
-          <p class="lead">
-            A clean process with clear confirmation — designed for clients who prefer things handled professionally.
-          </p>
+          <div class="gold-rule center"></div>
+          <p style="margin:0 auto;">A clean process with clear confirmation — designed for clients who prefer things handled professionally.</p>
         </div>
 
-        <div class="feature-grid">
-          <div class="feature-card">
-            <h3>Request</h3>
-            <p>Submit the form with your preferred timing, location, and document type.</p>
+        <div class="services-grid" style="grid-template-columns: repeat(4,1fr);">
+          <div class="service-card reveal">
+            <i class="fas fa-pen-to-square service-icon" aria-hidden="true"></i>
+            <h3>1. Request</h3>
+            <p>Submit the form with your preferred timing, location, and document type. We review every request.</p>
           </div>
-          <div class="feature-card">
-            <h3>Confirmation</h3>
-            <p>We review and confirm the appointment details before dispatch.</p>
+          <div class="service-card reveal reveal-delay-1">
+            <i class="fas fa-check-circle service-icon" aria-hidden="true"></i>
+            <h3>2. Confirmation</h3>
+            <p>We review and confirm the appointment details before dispatch — no surprises.</p>
           </div>
-          <div class="feature-card">
-            <h3>Arrival</h3>
-            <p>Professional arrival at the agreed time with a calm, organized process.</p>
+          <div class="service-card reveal reveal-delay-2">
+            <i class="fas fa-car service-icon" aria-hidden="true"></i>
+            <h3>3. Arrival</h3>
+            <p>Professional arrival at the agreed time with a calm, organized, prepared notary.</p>
           </div>
-          <div class="feature-card">
-            <h3>Completion</h3>
-            <p>Finish the notarization with attention to accuracy and professionalism.</p>
+          <div class="service-card reveal reveal-delay-3">
+            <i class="fas fa-file-signature service-icon" aria-hidden="true"></i>
+            <h3>4. Completion</h3>
+            <p>Notarization completed with attention to accuracy, professionalism, and thoroughness.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- REQUEST NOTARY -->
-    <section id="request-notary" class="section">
+    <!-- ── REQUEST FORM ── -->
+    <section class="section" id="request-notary">
       <div class="container">
-        <div class="section-head">
+        <div class="section-head reveal" style="text-align:center;">
+          <span class="eyebrow">Book an Appointment</span>
           <h2>Request Mobile Notary Service</h2>
-          <p class="lead">
-            Complete the form below and we will follow up to confirm your appointment details.
-          </p>
+          <div class="gold-rule center"></div>
+          <p style="margin:0 auto;">Complete the form below and we will follow up to confirm your appointment details.</p>
         </div>
 
-        <!-- Google Form Embed -->
-        <div class="image-card" style="padding: 0; overflow: hidden;">
+        <div class="booking-wrap reveal">
+          <div class="booking-header">
+            <h3><i class="fas fa-file-signature" aria-hidden="true"></i> Notary Request Form</h3>
+            <a href="tel:+18179696868" class="btn btn-ghost">
+              <i class="fas fa-phone" aria-hidden="true"></i> Call 817-969-6868
+            </a>
+          </div>
+
           <iframe
             src="https://docs.google.com/forms/d/e/1FAIpQLScEXYDVkDFIPCOGb0fmN_o9yWLn8NJzGUb9HsDzplWg0bRpGw/viewform?embedded=true"
-            width="100%"
-            height="1100"
+            class="booking-iframe"
+            title="Mobile Notary Request Form"
+            loading="lazy"
+            style="min-height:900px;"
             frameborder="0"
             marginheight="0"
             marginwidth="0"
-            style="border:0; display:block;"
-            title="Mobile Notary Request Form"
           >Loading…</iframe>
-        </div>
 
-        <p style="margin-top:1rem;">
-          If the form doesn’t load properly, you can open it directly here:
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLScEXYDVkDFIPCOGb0fmN_o9yWLn8NJzGUb9HsDzplWg0bRpGw/viewform"
-             target="_blank" rel="noopener">
-            Mobile Notary Request Form
-          </a>
-        </p>
+          <div class="booking-footer">
+            If the form doesn't load, open it directly:
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScEXYDVkDFIPCOGb0fmN_o9yWLn8NJzGUb9HsDzplWg0bRpGw/viewform" target="_blank" rel="noopener noreferrer">
+              Mobile Notary Request Form
+            </a>
+            &nbsp;or call&nbsp;
+            <a href="tel:+18179696868">817-969-6868</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CTA BAND ── -->
+    <section class="cta-band">
+      <div class="container reveal">
+        <span class="eyebrow">Need a Chauffeur Too?</span>
+        <h2>Professional Transportation Awaits</h2>
+        <p>Agency Chauffeur Private Drivers also provides appointment-based chauffeur transportation across DFW — airport transfers, corporate travel, weddings, and more.</p>
+        <div class="cta-row center">
+          <a href="index.html#booking" class="btn btn-primary">Book a Chauffeur</a>
+          <a href="index.html#fleet" class="btn btn-secondary">View the Fleet</a>
+        </div>
       </div>
     </section>
 
   </main>
 
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="container">
-      <p class="footer-bottom">
-        © <span id="year"></span> Agency Chauffeur Private Drivers. All rights reserved.
-      </p>
+  <!-- ── FOOTER ── -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <div class="footer-brand">
+          <img src="Photos/Logo.png" alt="Agency Chauffeur Private Drivers" class="footer-logo" loading="lazy" width="48" height="48" />
+          <div>
+            <div class="footer-title">Agency Chauffeur<br>Private Drivers</div>
+            <div class="footer-sub">Professional Chauffeurs · DFW</div>
+          </div>
+        </div>
+        <p class="footer-desc">
+          Appointment-based chauffeur transportation and mobile notary service delivered with over 20 years of professional experience across the Dallas–Fort Worth Metroplex.
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="index.html#airport">Airport Transfers</a></li>
+          <li><a href="index.html#corporate">Corporate Travel</a></li>
+          <li><a href="index.html#events">Weddings &amp; Events</a></li>
+          <li><a href="index.html#fleet">Fleet</a></li>
+          <li><a href="notary.html">Mobile Notary</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#booking">Book a Ride</a></li>
+          <li><a href="notary.html" aria-current="page">Mobile Notary</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <address style="font-style:normal;">
+          <a href="tel:+18179696868" class="footer-contact-item">
+            <i class="fas fa-phone" aria-hidden="true"></i> 817-969-6868
+          </a>
+          <a href="mailto:info@agency-limo.com" class="footer-contact-item">
+            <i class="fas fa-envelope" aria-hidden="true"></i> info@agency-limo.com
+          </a>
+          <div class="footer-contact-item">
+            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+            Fort Worth, TX<br>Dallas–Fort Worth Metroplex
+          </div>
+        </address>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span class="current-year"></span> Agency Chauffeur Private Drivers. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="sitemap.xml">Sitemap</a>
+      </div>
     </div>
   </footer>
 
+</div><!-- /.site-frame -->
+
+<!-- Mobile sticky CTA -->
+<div class="mobile-sticky-cta" aria-hidden="true">
+  <a href="tel:+18179696868" class="btn btn-secondary" style="flex:1; justify-content:center; font-size:0.75rem; padding:0.75rem 0.5rem;">
+    <i class="fas fa-phone" aria-hidden="true"></i> Call
+  </a>
+  <a href="#request-notary" class="btn btn-primary" style="flex:2; justify-content:center; font-size:0.75rem; padding:0.75rem 0.5rem;">
+    <i class="fas fa-file-signature" aria-hidden="true"></i> Request Notary
+  </a>
 </div>
 
 <script>
-  document.getElementById("year").textContent = new Date().getFullYear();
+  document.querySelectorAll('.current-year').forEach(el => el.textContent = new Date().getFullYear());
+
+  const header = document.getElementById('mainHeader');
+  const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 40);
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  const revealObs = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); revealObs.unobserve(e.target); } });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
 </script>
 
 <script src="script.js"></script>
