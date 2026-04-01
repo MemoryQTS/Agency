@@ -544,12 +544,28 @@ body.no-scroll { overflow: hidden; }
 /* ── HERO ── */
 .hero {
   position: relative;
+  height: 100vh;
   height: 100svh;
   min-height: 600px;
   display: flex;
   align-items: center;
   overflow: hidden;
   background: var(--black);
+}
+
+/* On mobile, prevent the hero from being taller than visible area */
+@media (max-width: 900px) {
+  .hero {
+    height: calc(100vh - env(safe-area-inset-bottom, 0px));
+    height: calc(100svh - env(safe-area-inset-bottom, 0px));
+    min-height: 520px;
+    /* Push content up slightly so CTA stays visible above mobile browser chrome */
+    align-items: flex-start;
+    padding-top: calc(var(--header-h) + 2rem);
+  }
+  .hero-content {
+    padding-top: 0 !important;
+  }
 }
 
 .hero-slider {
@@ -1690,6 +1706,9 @@ body.no-scroll { overflow: hidden; }
   .mobile-toggle   { display: flex; }
   .mobile-sticky-cta { display: flex; }
   :root { --header-h: 68px; }
+  /* Booking header stacks and button goes full-width */
+  .booking-header  { flex-direction: column; align-items: flex-start; }
+  .booking-header .btn { width: 100%; justify-content: center; }
 }
 
 @media (max-width: 720px) {
@@ -1704,7 +1723,8 @@ body.no-scroll { overflow: hidden; }
   .footer-grid     { grid-template-columns: 1fr; gap: 2rem; }
   .footer-bottom   { flex-direction: column; text-align: center; }
   .hero-scroll     { display: none; }
-  .booking-header  { flex-direction: column; align-items: flex-start; }
+  /* Notary "What to Expect" 4-col → 1 col */
+  .notary-steps-grid { grid-template-columns: 1fr !important; }
   .about-img-accent { position: static; margin-top: -3rem; margin-left: auto; max-width: 200px; }
 }
 
